@@ -1,0 +1,28 @@
+{
+  "name": "climatrack",
+  "version": "1.0.00",
+  "description": "Frío Industrial, Cámaras Frigoríficas, Climatización Central HVAC y Mantenimiento de Energía Solar y Grupos Electrógenos",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "node tests/run_tests.js",
+    "security:full": "node ../AiAppFactory/tools/security-guardian/index.mjs .",
+    "version:bump": "node -e \"const fs=require('fs');const p=require('./package.json');const v=require('./version.json');const parts=p.version.split('.');const next=parseInt(parts[2])+1;const nextV=parts[0]+'.'+parts[1]+'.'+String(next).padStart(2,'0');p.version=nextV;v.version=nextV;fs.writeFileSync('package.json',JSON.stringify(p,null,2));fs.writeFileSync('version.json',JSON.stringify(v,null,2));console.log('Bumped to '+nextV);\""
+  },
+  "keywords": [
+    "hvac",
+    "frio-industrial",
+    "refrigeracion",
+    "superheat",
+    "subcooling",
+    "r410a",
+    "r134a",
+    "r404a",
+    "energia-solar",
+    "grupos-electrogenos",
+    "epod",
+    "sha256"
+  ],
+  "author": "Leon Lezcano (AiAppFactory)",
+  "license": "Proprietary"
+}

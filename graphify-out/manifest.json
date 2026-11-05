@@ -1,0 +1,82 @@
+{
+  "firebase.json": {
+    "mtime": 1793897689.5608456,
+    "ast_hash": "09c91f46f2c6b3144cdaae72eafef290",
+    "semantic_hash": "09c91f46f2c6b3144cdaae72eafef290"
+  },
+  "package.json": {
+    "mtime": 1793897670.3369,
+    "ast_hash": "8911b49b84aaefdb999bdc585bbe0420",
+    "semantic_hash": "8911b49b84aaefdb999bdc585bbe0420"
+  },
+  "src/core/compressorHealthScoring.js": {
+    "mtime": 1793897815.271732,
+    "ast_hash": "76973185c6da2feef4c9e947ab185f60",
+    "semantic_hash": "76973185c6da2feef4c9e947ab185f60"
+  },
+  "src/core/gasRefrigerantEngine.js": {
+    "mtime": 1793897778.1879852,
+    "ast_hash": "24df2fa6aec05e8874b98225d6e99a3c",
+    "semantic_hash": "24df2fa6aec05e8874b98225d6e99a3c"
+  },
+  "src/core/slaEmergencyDispatcher.js": {
+    "mtime": 1793897795.3471954,
+    "ast_hash": "5fd13f83f924ea9f5fe1783d532b5b9b",
+    "semantic_hash": "5fd13f83f924ea9f5fe1783d532b5b9b"
+  },
+  "src/main.js": {
+    "mtime": 1793898136.583553,
+    "ast_hash": "48cb474879233ac3bc84b37221ed79e5",
+    "semantic_hash": "48cb474879233ac3bc84b37221ed79e5"
+  },
+  "src/services/climaTrackCache.service.js": {
+    "mtime": 1793897863.1149566,
+    "ast_hash": "a6c160c98635e52d1c45108649dec7f4",
+    "semantic_hash": "a6c160c98635e52d1c45108649dec7f4"
+  },
+  "src/services/dualCurrencyContractService.js": {
+    "mtime": 1793897844.28064,
+    "ast_hash": "235280dcf38900f88d1ee591e775bd7a",
+    "semantic_hash": "235280dcf38900f88d1ee591e775bd7a"
+  },
+  "src/services/exportService.js": {
+    "mtime": 1793897854.3709397,
+    "ast_hash": "c1972c8c15eb768503f5047bacf52cba",
+    "semantic_hash": "c1972c8c15eb768503f5047bacf52cba"
+  },
+  "src/services/serviceOrderService.js": {
+    "mtime": 1793897832.533279,
+    "ast_hash": "8eb87b72bba2bc5a549b5e57de1dcc3f",
+    "semantic_hash": "8eb87b72bba2bc5a549b5e57de1dcc3f"
+  },
+  "src/services/whatsAppClimaNotifier.service.js": {
+    "mtime": 1793897876.1677158,
+    "ast_hash": "ef08491aa8f4cfcc17a8d500e8c55ebe",
+    "semantic_hash": "ef08491aa8f4cfcc17a8d500e8c55ebe"
+  },
+  "src/utils/cryptoSeal.js": {
+    "mtime": 1793898011.67049,
+    "ast_hash": "a64c811fbfc7d5474a44211236e66d44",
+    "semantic_hash": "a64c811fbfc7d5474a44211236e66d44"
+  },
+  "src/utils/formatters.js": {
+    "mtime": 1793897754.62113,
+    "ast_hash": "52443277784c800e400542bd1ed0bc1d",
+    "semantic_hash": "52443277784c800e400542bd1ed0bc1d"
+  },
+  "src/utils/sanitizer.js": {
+    "mtime": 1793897726.7208061,
+    "ast_hash": "9d9bfc5e1ec8c635bf8684b2395d9155",
+    "semantic_hash": "9d9bfc5e1ec8c635bf8684b2395d9155"
+  },
+  "tests/run_tests.js": {
+    "mtime": 1793897927.99255,
+    "ast_hash": "120f502a0b90aa175916eacbdb1dfdb5",
+    "semantic_hash": "120f502a0b90aa175916eacbdb1dfdb5"
+  },
+  "version.json": {
+    "mtime": 1793897677.856135,
+    "ast_hash": "5b3b1d557ee8d42f96685e2b2e461844",
+    "semantic_hash": "5b3b1d557ee8d42f96685e2b2e461844"
+  }
+}

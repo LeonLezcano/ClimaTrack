@@ -1,0 +1,40 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isStaff() {
+      return isAuthenticated() && (
+        request.auth.token.role == 'SUPERVISOR' ||
+        request.auth.token.role == 'HVAC_TECH'
+      );
+    }
+
+    function isClient(clientId) {
+      return isAuthenticated() && request.auth.uid == clientId;
+    }
+
+    // Órdenes de Servicio y Emergencias Frío
+    match /serviceOrders/{orderId} {
+      allow read: if isStaff() || (isAuthenticated() && resource.data.customerId == request.auth.uid);
+      allow create: if isStaff();
+      // Órdenes finalizadas y selladas con SHA-256 son inmutables
+      allow update: if isStaff() && resource.data.status != 'FINALIZADA_SELLADA';
+      allow delete: if false; // Prohibido purgar actas forenses
+    }
+
+    // Contratos de Mantenimiento Bimonetario
+    match /contracts/{contractId} {
+      allow read: if isStaff() || (isAuthenticated() && resource.data.customerId == request.auth.uid);
+      allow write: if isStaff() && request.auth.token.role == 'SUPERVISOR';
+    }
+
+    // Registro de Maquinaria y Equipos Frigoríficos
+    match /equipment/{equipId} {
+      allow read: if isStaff() || (isAuthenticated() && resource.data.customerId == request.auth.uid);
+      allow write: if isStaff();
+    }
+  }
+}

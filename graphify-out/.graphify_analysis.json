@@ -1,0 +1,229 @@
+{
+  "communities": {
+    "0": [
+      "src_core_slaemergencydispatcher_slaemergencydispatcher_evaluateslastatus",
+      "src_main_climatrackapp",
+      "src_main_climatrackapp_bindevents",
+      "src_main_climatrackapp_closeemergencymodal",
+      "src_main_climatrackapp_constructor",
+      "src_main_climatrackapp_handlecreateemergency",
+      "src_main_climatrackapp_handleresolveemergency",
+      "src_main_climatrackapp_handlewhatsappdispatch",
+      "src_main_climatrackapp_init",
+      "src_main_climatrackapp_openemergencymodal",
+      "src_main_climatrackapp_renderall",
+      "src_main_climatrackapp_renderassetcards",
+      "src_main_climatrackapp_rendercontractcards",
+      "src_main_climatrackapp_renderdashboardtable",
+      "src_main_climatrackapp_renderemergencycards",
+      "src_main_climatrackapp_rendermetrics",
+      "src_main_climatrackapp_startliveslatimer",
+      "src_main_climatrackapp_switchtab",
+      "src_utils_formatters_formatters",
+      "src_utils_sanitizer_sanitizer"
+    ],
+    "1": [
+      "src_core_gasrefrigerantengine",
+      "src_core_gasrefrigerantengine_refrigerant_catalog",
+      "src_services_serviceorderservice",
+      "src_services_serviceorderservice_serviceorderservice",
+      "src_services_serviceorderservice_serviceorderservice_sealorder",
+      "src_services_serviceorderservice_serviceorderservice_verifyseal",
+      "src_utils_cryptoseal",
+      "src_utils_cryptoseal_cryptoseal",
+      "src_utils_cryptoseal_cryptoseal_generate",
+      "src_utils_cryptoseal_cryptoseal_sha256",
+      "src_utils_cryptoseal_cryptoseal_verify",
+      "src_utils_cryptoseal_deepsort",
+      "src_utils_cryptoseal_k_constants",
+      "src_utils_cryptoseal_toutf8binarystring"
+    ],
+    "2": [
+      "package_keywords",
+      "ref_energia_solar",
+      "ref_epod",
+      "ref_frio_industrial",
+      "ref_grupos_electrogenos",
+      "ref_hvac",
+      "ref_r134a",
+      "ref_r404a",
+      "ref_r410a",
+      "ref_refrigeracion",
+      "ref_sha256",
+      "ref_subcooling",
+      "ref_superheat"
+    ],
+    "3": [
+      "package",
+      "package_author",
+      "package_description",
+      "package_license",
+      "package_main",
+      "package_name",
+      "package_scripts",
+      "package_scripts_security_full",
+      "package_scripts_test",
+      "package_scripts_version_bump",
+      "package_type",
+      "package_version"
+    ],
+    "4": [
+      "src_services_climatrackcache_service",
+      "src_services_climatrackcache_service_climatrackcacheservice",
+      "src_services_climatrackcache_service_climatrackcacheservice_getorders",
+      "src_services_climatrackcache_service_climatrackcacheservice_ispurged",
+      "src_services_climatrackcache_service_climatrackcacheservice_purgedata",
+      "src_services_climatrackcache_service_climatrackcacheservice_resetpurgefortesting",
+      "src_services_climatrackcache_service_climatrackcacheservice_saveorders",
+      "src_services_climatrackcache_service_getstorageitem",
+      "src_services_climatrackcache_service_memorystore",
+      "src_services_climatrackcache_service_removestorageitem",
+      "src_services_climatrackcache_service_setstorageitem"
+    ],
+    "5": [
+      "src_core_gasrefrigerantengine_gasrefrigerantengine",
+      "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatecylinderbalance",
+      "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatesubcooling",
+      "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatesuperheat",
+      "src_core_gasrefrigerantengine_gasrefrigerantengine_diagnosecircuit",
+      "src_core_gasrefrigerantengine_gasrefrigerantengine_getsaturationtemperature",
+      "src_main_climatrackapp_updatethermodynamicscalculator",
+      "src_services_serviceorderservice_serviceorderservice_createorder"
+    ],
+    "6": [
+      "src_utils_formatters",
+      "tests_run_tests",
+      "tests_run_tests_contractsample",
+      "tests_run_tests_emergencyticket",
+      "tests_run_tests_it",
+      "tests_run_tests_sampleorder",
+      "tests_run_tests_sealedorder"
+    ],
+    "7": [
+      "src_main",
+      "src_services_whatsappclimanotifier_service",
+      "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice",
+      "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice_notifyemergencydispatch",
+      "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice_notifyordercompletion",
+      "src_utils_sanitizer"
+    ],
+    "8": [
+      "src_core_compressorhealthscoring",
+      "src_core_compressorhealthscoring_compressorhealthscoring",
+      "src_core_compressorhealthscoring_compressorhealthscoring_evaluatebackuppower",
+      "src_core_compressorhealthscoring_compressorhealthscoring_evaluatecompressorhealth",
+      "src_main_climatrackapp_seedinitialdemodata"
+    ],
+    "9": [
+      "src_core_slaemergencydispatcher",
+      "src_core_slaemergencydispatcher_sla_tiers",
+      "src_core_slaemergencydispatcher_slaemergencydispatcher",
+      "src_core_slaemergencydispatcher_slaemergencydispatcher_createdispatchticket"
+    ],
+    "10": [
+      "src_services_dualcurrencycontractservice",
+      "src_services_dualcurrencycontractservice_dualcurrencycontractservice",
+      "src_services_dualcurrencycontractservice_dualcurrencycontractservice_createcontract",
+      "src_services_dualcurrencycontractservice_dualcurrencycontractservice_evaluatedunning"
+    ],
+    "11": [
+      "src_services_exportservice",
+      "src_services_exportservice_exportservice",
+      "src_services_exportservice_exportservice_downloadcsv",
+      "src_services_exportservice_exportservice_generateorderscsv"
+    ],
+    "12": [
+      "src_services_whatsappclimanotifier_service_whatsappclimanotifier"
+    ]
+  },
+  "cohesion": {
+    "0": 0.24210526315789474,
+    "1": 0.21978021978021978,
+    "2": 0.15384615384615385,
+    "3": 0.16666666666666666,
+    "4": 0.2909090909090909,
+    "5": 0.4642857142857143,
+    "6": 0.2857142857142857,
+    "7": 0.4,
+    "8": 0.5,
+    "9": 0.5,
+    "10": 0.5,
+    "11": 0.5,
+    "12": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_main_climatrackapp",
+      "label": "ClimaTrackApp",
+      "degree": 19
+    },
+    {
+      "id": "package_keywords",
+      "label": "keywords",
+      "degree": 13
+    },
+    {
+      "id": "src_core_gasrefrigerantengine_gasrefrigerantengine",
+      "label": "GasRefrigerantEngine",
+      "degree": 9
+    },
+    {
+      "id": "src_services_climatrackcache_service_climatrackcacheservice",
+      "label": "ClimaTrackCacheService",
+      "degree": 8
+    },
+    {
+      "id": "src_utils_formatters_formatters",
+      "label": "Formatters",
+      "degree": 7
+    },
+    {
+      "id": "src_utils_sanitizer_sanitizer",
+      "label": "Sanitizer",
+      "degree": 7
+    },
+    {
+      "id": "src_services_serviceorderservice_serviceorderservice",
+      "label": "ServiceOrderService",
+      "degree": 6
+    },
+    {
+      "id": "src_utils_cryptoseal_cryptoseal",
+      "label": "CryptoSeal",
+      "degree": 6
+    },
+    {
+      "id": "src_core_compressorhealthscoring_compressorhealthscoring",
+      "label": "CompressorHealthScoring",
+      "degree": 5
+    },
+    {
+      "id": "src_core_slaemergencydispatcher_slaemergencydispatcher",
+      "label": "SlaEmergencyDispatcher",
+      "degree": 5
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `ClimaTrackApp` connect `Community 0` to `Community 8`, `Community 5`, `Community 7`?",
+      "why": "High betweenness centrality (0.127) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `ClimaTrackCacheService` connect `Community 4` to `Community 6`, `Community 7`?",
+      "why": "High betweenness centrality (0.061) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `GasRefrigerantEngine` connect `Community 5` to `Community 1`, `Community 6`, `Community 7`?",
+      "why": "High betweenness centrality (0.050) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `name`, `version`, `description` to the rest of the system?",
+      "why": "29 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}
