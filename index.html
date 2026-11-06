@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es" class="h-full bg-slate-950 text-slate-100">
+<html lang="es" class="h-full bg-[#080f1d] text-[#e2ecf9]">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>ClimaTrack v1.0.00 — Frío Industrial, HVAC & Energía Solar / Grupos</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2338bdf8'><path d='M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14'/></svg>">
+  <title>ClimaTrack v1.0.01 — Frío Industrial, HVAC & Energía Solar / Grupos</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2306b6d4'><path d='M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14'/></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @media print {
@@ -12,58 +12,61 @@
       body { background: white !important; color: black !important; }
     }
     .touch-target { min-height: 44px; min-width: 44px; }
+    h1 { font-size: 1.75rem; line-height: 2.25rem; font-weight: 800; }
+    h2 { font-size: 1.5rem; line-height: 2rem; font-weight: 800; }
+    h3 { font-size: 1.15rem; line-height: 1.75rem; font-weight: 700; }
   </style>
 </head>
-<body class="h-full flex flex-col font-sans antialiased select-none">
-  <!-- Top Navigation Bar -->
-  <header class="no-print bg-slate-900 border-b border-slate-800 sticky top-0 z-40 px-4 py-3 flex items-center justify-between">
+<body class="h-full flex flex-col font-sans text-sm antialiased select-none bg-[#080f1d]">
+  <!-- Top Navigation Bar: Cryogenic Telemetry Header -->
+  <header class="no-print bg-[#0c1629] border-b border-[#1b2b48] sticky top-0 z-40 px-4 py-3 flex items-center justify-between shadow-md">
     <div class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20 text-white font-black text-xl">
+      <div class="w-10 h-10 rounded-lg bg-[#0e253d] border border-[#1a4b75] flex items-center justify-center text-xl text-[#38bdf8]">
         ❄️
       </div>
       <div>
         <div class="flex items-center gap-2">
-          <h1 class="font-bold text-base md:text-lg tracking-tight text-white">ClimaTrack</h1>
-          <span class="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">v1.0.00</span>
-          <span id="network-badge" class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">ONLINE</span>
+          <h1 class="font-black text-base md:text-lg tracking-tight text-[#f0f6ff]">ClimaTrack</h1>
+          <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-[#0b2436] text-[#38bdf8] border border-[#14476b] font-bold">v1.0.01</span>
+          <span id="network-badge" class="text-[11px] font-mono px-2 py-0.5 rounded bg-[#0b291d] text-[#34d399] border border-[#14523b] font-bold">ONLINE</span>
         </div>
-        <p class="text-xs text-slate-400 hidden sm:block">Frío Industrial, Cámaras Frigoríficas, HVAC & Mantenimiento de Energía</p>
+        <p class="text-xs text-[#8ca4c8] hidden sm:block">Frío Industrial, Cámaras Frigoríficas, HVAC & Mantenimiento de Energía</p>
       </div>
     </div>
 
     <!-- Quick Action Buttons -->
     <div class="flex items-center gap-2">
-      <button id="btn-export-csv" class="no-print touch-target px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 flex items-center gap-1.5 transition">
+      <button id="btn-export-csv" class="no-print touch-target px-3.5 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#d6e4f7] text-xs font-semibold border border-[#233b63] flex items-center gap-1.5 transition">
         <span>📑</span> <span class="hidden md:inline">Exportar CSV</span>
       </button>
-      <button id="btn-new-emergency" class="no-print touch-target px-3 py-1.5 rounded-lg bg-rose-600 hover:bg-rose-500 text-white text-xs font-semibold shadow-md shadow-rose-600/30 flex items-center gap-1.5 transition">
+      <button id="btn-new-emergency" class="no-print touch-target px-3.5 py-2 rounded-lg bg-[#e11d48] hover:bg-[#be123c] text-white text-xs font-bold shadow flex items-center gap-1.5 transition">
         <span>🚨</span> <span>Guardia 24/7</span>
       </button>
-      <button id="btn-new-order" class="no-print touch-target px-3 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold shadow-md shadow-cyan-600/30 flex items-center gap-1.5 transition">
+      <button id="btn-new-order" class="no-print touch-target px-4 py-2 rounded-lg bg-[#0284c7] hover:bg-[#0369a1] text-white text-xs font-bold shadow flex items-center gap-1.5 transition">
         <span>+</span> <span>Nueva Orden</span>
       </button>
     </div>
   </header>
 
   <!-- Mobile Bottom Tab Navigation -->
-  <nav class="no-print sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-900/95 backdrop-blur border-t border-slate-800 flex justify-around py-2 px-1">
-    <button data-tab="dashboard" class="tab-btn flex flex-col items-center text-[10px] text-slate-400 hover:text-white px-2 py-1 active:scale-95">
+  <nav class="no-print sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#091224]/95 backdrop-blur border-t border-[#1b2b48] flex justify-around py-2 px-1">
+    <button data-tab="dashboard" class="tab-btn flex flex-col items-center text-xs text-[#8ca4c8] hover:text-white px-2 py-1 active:scale-95">
       <span class="text-lg">📊</span>
       <span>Métricas</span>
     </button>
-    <button data-tab="emergencies" class="tab-btn flex flex-col items-center text-[10px] text-rose-400 font-semibold px-2 py-1 active:scale-95">
+    <button data-tab="emergencies" class="tab-btn flex flex-col items-center text-xs text-[#f43f5e] font-bold px-2 py-1 active:scale-95">
       <span class="text-lg">🚨</span>
       <span>Guardias</span>
     </button>
-    <button data-tab="thermodynamics" class="tab-btn flex flex-col items-center text-[10px] text-slate-400 hover:text-white px-2 py-1 active:scale-95">
+    <button data-tab="thermodynamics" class="tab-btn flex flex-col items-center text-xs text-[#8ca4c8] hover:text-white px-2 py-1 active:scale-95">
       <span class="text-lg">🌡️</span>
       <span>Gases P-T</span>
     </button>
-    <button data-tab="assets" class="tab-btn flex flex-col items-center text-[10px] text-slate-400 hover:text-white px-2 py-1 active:scale-95">
+    <button data-tab="assets" class="tab-btn flex flex-col items-center text-xs text-[#8ca4c8] hover:text-white px-2 py-1 active:scale-95">
       <span class="text-lg">⚙️</span>
       <span>Equipos</span>
     </button>
-    <button data-tab="contracts" class="tab-btn flex flex-col items-center text-[10px] text-slate-400 hover:text-white px-2 py-1 active:scale-95">
+    <button data-tab="contracts" class="tab-btn flex flex-col items-center text-xs text-[#8ca4c8] hover:text-white px-2 py-1 active:scale-95">
       <span class="text-lg">💵</span>
       <span>Abonos</span>
     </button>
@@ -72,31 +75,31 @@
   <!-- Main Layout -->
   <div class="flex-1 flex overflow-hidden">
     <!-- Desktop Sidebar -->
-    <aside class="no-print hidden sm:flex flex-col w-60 bg-slate-900 border-r border-slate-800 p-4 gap-2">
-      <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400 px-3 py-1">Navegación</div>
-      <button data-tab="dashboard" class="tab-btn touch-target flex items-center gap-3 px-3 py-2 rounded-xl text-xs font-medium text-slate-300 hover:bg-slate-800/80 hover:text-white transition text-left">
+    <aside class="no-print hidden sm:flex flex-col w-60 bg-[#0a1426] border-r border-[#1b2b48] p-4 gap-2">
+      <div class="text-[11px] font-mono uppercase tracking-wider text-[#8ca4c8] px-3 py-1 font-bold">Telemetría Frío</div>
+      <button data-tab="dashboard" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
         <span class="text-base">📊</span> <span>Dashboard General</span>
       </button>
-      <button data-tab="emergencies" class="tab-btn touch-target flex items-center gap-3 px-3 py-2 rounded-xl text-xs font-semibold text-white bg-rose-600/20 text-rose-400 border border-rose-500/30 transition text-left">
+      <button data-tab="emergencies" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-bold text-[#f43f5e] bg-[#29131a] border border-[#541f2d] transition text-left">
         <span class="text-base">🚨</span> <span>Guardias 24/7 & SLA</span>
       </button>
-      <button data-tab="thermodynamics" class="tab-btn touch-target flex items-center gap-3 px-3 py-2 rounded-xl text-xs font-medium text-slate-300 hover:bg-slate-800/80 hover:text-white transition text-left">
+      <button data-tab="thermodynamics" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
         <span class="text-base">🌡️</span> <span>Termodinámica & P-T</span>
       </button>
-      <button data-tab="assets" class="tab-btn touch-target flex items-center gap-3 px-3 py-2 rounded-xl text-xs font-medium text-slate-300 hover:bg-slate-800/80 hover:text-white transition text-left">
+      <button data-tab="assets" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
         <span class="text-base">⚙️</span> <span>Salud de Compresores</span>
       </button>
-      <button data-tab="contracts" class="tab-btn touch-target flex items-center gap-3 px-3 py-2 rounded-xl text-xs font-medium text-slate-300 hover:bg-slate-800/80 hover:text-white transition text-left">
+      <button data-tab="contracts" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
         <span class="text-base">💵</span> <span>Abonos Bimonetarios</span>
       </button>
 
-      <div class="mt-auto pt-4 border-t border-slate-800/80">
-        <div class="bg-slate-800/40 rounded-xl p-3 border border-slate-800 text-[11px] text-slate-400 flex flex-col gap-1">
-          <div class="flex items-center justify-between text-slate-300 font-medium">
+      <div class="mt-auto pt-4 border-t border-[#1b2b48]">
+        <div class="bg-[#0f1d35] rounded-lg p-3 border border-[#1f3459] text-xs text-[#8ca4c8] flex flex-col gap-1">
+          <div class="flex items-center justify-between text-[#e2ecf9] font-semibold">
             <span>Sello Criptográfico</span>
-            <span class="text-emerald-400">SHA-256</span>
+            <span class="text-[#34d399] font-mono">SHA-256</span>
           </div>
-          <p class="text-[10px] text-slate-400">Actas ePOD y partes de refrigeración blindados contra adulteración.</p>
+          <p class="text-[11px] text-[#8ca4c8]">Actas ePOD y partes de refrigeración blindados contra adulteración.</p>
         </div>
       </div>
     </aside>
@@ -106,13 +109,13 @@
       
       <!-- TAB: DASHBOARD -->
       <section id="tab-dashboard" class="tab-content hidden space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-l-4 border-[#06b6d4] pl-3">
           <div>
-            <h2 class="text-xl font-bold text-white tracking-tight">Centro de Control de Frío & Mantenimiento</h2>
-            <p class="text-xs text-slate-400">Supervisión en tiempo real de cadenas de frío, SLAs críticos y flota de generadores</p>
+            <h2 class="text-2xl font-black text-[#f0f6ff] tracking-tight">Centro de Control de Frío & Mantenimiento</h2>
+            <p class="text-xs text-[#8ca4c8]">Supervisión en tiempo real de cadenas de frío, SLAs críticos y flota de generadores</p>
           </div>
           <div class="flex gap-2">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-bold bg-[#0b2436] text-[#38bdf8] border border-[#14476b]">
               ❄️ Guardia Activa 24/7
             </span>
           </div>
@@ -120,64 +123,64 @@
 
         <!-- Metric Cards -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col gap-1">
-            <span class="text-xs font-medium text-slate-400">Guardias Activas</span>
-            <div class="flex items-baseline gap-2">
-              <span id="metric-active-emergencies" class="text-2xl font-bold text-rose-400">0</span>
-              <span class="text-xs text-slate-400">en curso</span>
+          <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
+            <span class="text-xs font-semibold uppercase tracking-wider text-[#8ca4c8]">Guardias Activas</span>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="metric-active-emergencies" class="text-3xl font-black text-[#f43f5e] font-mono">0</span>
+              <span class="text-xs text-[#8ca4c8]">en curso</span>
             </div>
-            <span class="text-[10px] text-slate-400">Emergencias con SLA estricto</span>
+            <span class="text-[11px] text-[#718ab0]">Emergencias con SLA estricto</span>
           </div>
 
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col gap-1">
-            <span class="text-xs font-medium text-slate-400">Gas Recargado Mes</span>
-            <div class="flex items-baseline gap-2">
-              <span id="metric-total-gas-kg" class="text-2xl font-bold text-cyan-400">0.0</span>
-              <span class="text-xs text-slate-400">kg netos</span>
+          <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
+            <span class="text-xs font-semibold uppercase tracking-wider text-[#8ca4c8]">Gas Recargado Mes</span>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="metric-total-gas-kg" class="text-3xl font-black text-[#38bdf8] font-mono">0.0</span>
+              <span class="text-xs text-[#8ca4c8]">kg netos</span>
             </div>
-            <span class="text-[10px] text-slate-400">R404A / R410A / R134a</span>
+            <span class="text-[11px] text-[#718ab0]">R404A / R410A / R134a</span>
           </div>
 
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col gap-1">
-            <span class="text-xs font-medium text-slate-400">Salud Promedio</span>
-            <div class="flex items-baseline gap-2">
-              <span id="metric-avg-health" class="text-2xl font-bold text-emerald-400">100</span>
-              <span class="text-xs text-slate-400">/ 100</span>
+          <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
+            <span class="text-xs font-semibold uppercase tracking-wider text-[#8ca4c8]">Salud Promedio</span>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="metric-avg-health" class="text-3xl font-black text-[#34d399] font-mono">100</span>
+              <span class="text-xs text-[#8ca4c8]">/ 100</span>
             </div>
-            <span class="text-[10px] text-slate-400">Score de compresores y chillers</span>
+            <span class="text-[11px] text-[#718ab0]">Score de compresores y chillers</span>
           </div>
 
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col gap-1">
-            <span class="text-xs font-medium text-slate-400">Abonos Activos</span>
-            <div class="flex items-baseline gap-2">
-              <span id="metric-active-contracts" class="text-2xl font-bold text-blue-400">0</span>
-              <span class="text-xs text-slate-400">plantas</span>
+          <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
+            <span class="text-xs font-semibold uppercase tracking-wider text-[#8ca4c8]">Abonos Activos</span>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="metric-active-contracts" class="text-3xl font-black text-[#60a5fa] font-mono">0</span>
+              <span class="text-xs text-[#8ca4c8]">plantas</span>
             </div>
-            <span class="text-[10px] text-slate-400">Facturación bimonetaria ARS/USD</span>
+            <span class="text-[11px] text-[#718ab0]">Facturación bimonetaria ARS/USD</span>
           </div>
         </div>
 
         <!-- Recent Service Orders Table -->
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-4">
-          <div class="flex items-center justify-between">
-            <h3 class="text-sm font-semibold text-white">Últimas Órdenes de Servicio y Partes Técnicos</h3>
-            <span class="text-xs text-slate-400 font-mono">Tiempo Real</span>
+        <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-5 space-y-4">
+          <div class="flex items-center justify-between border-b border-[#1e3256] pb-3">
+            <h3 class="text-sm font-bold text-[#f0f6ff]">Últimas Órdenes de Servicio y Partes Técnicos</h3>
+            <span class="text-xs text-[#38bdf8] font-mono font-bold">Tiempo Real</span>
           </div>
           <div class="overflow-x-auto">
-            <table class="w-full text-left text-xs text-slate-300">
-              <thead class="text-slate-400 border-b border-slate-800 text-[11px] uppercase tracking-wider font-mono">
+            <table class="w-full text-left text-xs text-[#c5d7ed]">
+              <thead class="text-[#8ca4c8] border-b border-[#1e3256] text-[11px] uppercase tracking-wider font-mono">
                 <tr>
-                  <th class="pb-2">Orden</th>
-                  <th class="pb-2">Cliente / Planta</th>
-                  <th class="pb-2">Equipo</th>
-                  <th class="pb-2">Gas</th>
-                  <th class="pb-2">Superheat</th>
-                  <th class="pb-2">Subcooling</th>
-                  <th class="pb-2">Estado</th>
-                  <th class="pb-2">Sello SHA-256</th>
+                  <th class="pb-2.5">Orden</th>
+                  <th class="pb-2.5">Cliente / Planta</th>
+                  <th class="pb-2.5">Equipo</th>
+                  <th class="pb-2.5">Gas</th>
+                  <th class="pb-2.5">Superheat</th>
+                  <th class="pb-2.5">Subcooling</th>
+                  <th class="pb-2.5">Estado</th>
+                  <th class="pb-2.5">Sello SHA-256</th>
                 </tr>
               </thead>
-              <tbody id="dashboard-orders-tbody" class="divide-y divide-slate-800/60 font-sans">
+              <tbody id="dashboard-orders-tbody" class="divide-y divide-[#1b2b48] font-sans">
                 <!-- Dynamically injected -->
               </tbody>
             </table>
@@ -187,22 +190,22 @@
 
       <!-- TAB: EMERGENCIES & 24/7 SLA -->
       <section id="tab-emergencies" class="tab-content space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-l-4 border-[#f43f5e] pl-3">
           <div>
-            <h2 class="text-xl font-bold text-white tracking-tight">Despacho de Guardias 24/7 & SLA de Cadena de Frío</h2>
-            <p class="text-xs text-slate-400">Monitoreo de roturas críticas de frío con reloj regresivo SLA &lt; 120 minutos</p>
+            <h2 class="text-2xl font-black text-[#f0f6ff] tracking-tight">Despacho de Guardias 24/7 & SLA de Cadena de Frío</h2>
+            <p class="text-xs text-[#8ca4c8]">Monitoreo de roturas críticas de frío con reloj regresivo SLA &lt; 120 minutos</p>
           </div>
-          <button id="btn-trigger-emergency" class="touch-target px-3 py-1.5 rounded-lg bg-rose-600 hover:bg-rose-500 text-white text-xs font-semibold shadow transition flex items-center gap-1.5">
+          <button id="btn-trigger-emergency" class="touch-target px-3.5 py-2 rounded-lg bg-[#e11d48] hover:bg-[#be123c] text-white text-xs font-bold shadow transition flex items-center gap-1.5">
             <span>🚨</span> <span>Despachar Nueva Alerta</span>
           </button>
         </div>
 
         <!-- Critical Guidance Banner -->
-        <div class="bg-rose-500/10 border border-rose-500/20 rounded-2xl p-4 text-xs text-rose-200/90 space-y-2">
-          <div class="flex items-center gap-2 font-semibold text-rose-400">
+        <div class="bg-[#29131a] border border-[#541f2d] rounded-xl p-4 text-xs text-[#fecdd3] space-y-2">
+          <div class="flex items-center gap-2 font-bold text-[#fb7185]">
             <span>⚠️ Protocolo de Pérdida de Cadena de Frío (SLA Infranqueable)</span>
           </div>
-          <p class="leading-relaxed">
+          <p class="leading-relaxed text-[#fca5a5]">
             Las cámaras de congelados de carne (-18°C) y vacunas farmacéuticas no pueden superar los límites térmicos por más de 120 minutos. Toda intervención despachada debe ser confirmada in-situ por el técnico antes del vencimiento del SLA para evitar penalidades contractuales.
           </p>
         </div>
@@ -215,67 +218,67 @@
 
       <!-- TAB: THERMODYNAMICS & GASES -->
       <section id="tab-thermodynamics" class="tab-content hidden space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-l-4 border-[#38bdf8] pl-3">
           <div>
-            <h2 class="text-xl font-bold text-white tracking-tight">Calculador Termodinámico & Tabla Presión-Temperatura (P-T)</h2>
-            <p class="text-xs text-slate-400">Diagnóstico en tiempo real de Recalentamiento Útil (Superheat) y Subenfriamiento (Subcooling)</p>
+            <h2 class="text-2xl font-black text-[#f0f6ff] tracking-tight">Calculador Termodinámico & Tabla Presión-Temperatura (P-T)</h2>
+            <p class="text-xs text-[#8ca4c8]">Diagnóstico en tiempo real de Recalentamiento Útil (Superheat) y Subenfriamiento (Subcooling)</p>
           </div>
         </div>
 
-        <!-- Thermodynamic Calculator Card -->
-        <div class="bg-slate-900 border border-cyan-500/30 rounded-2xl p-5 space-y-5">
-          <div class="flex flex-wrap items-center justify-between border-b border-slate-800 pb-3 gap-3">
+        <!-- Thermodynamic Calculator Card: Single Level Flat Panel -->
+        <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-5 space-y-5">
+          <div class="flex flex-wrap items-center justify-between border-b border-[#1e3256] pb-3 gap-3">
             <div class="flex items-center gap-3">
-              <span class="text-cyan-400 font-bold text-sm">🌡️ Parámetros de Circuito Frigorífico</span>
-              <select id="calc-gas-type" class="bg-slate-950 border border-cyan-500/40 rounded-lg px-2.5 py-1 text-xs text-white font-semibold">
+              <span class="text-[#38bdf8] font-bold text-sm">🌡️ Parámetros de Circuito Frigorífico</span>
+              <select id="calc-gas-type" class="bg-[#091224] border border-[#1e3256] rounded px-3 py-1.5 text-xs text-white font-semibold">
                 <option value="R404A" selected>R-404A (Congelados / Baja Temp)</option>
                 <option value="R410A">R-410A (VRF / Inverter / Climatización)</option>
                 <option value="R134a">R-134a (Media Temp / Chillers)</option>
                 <option value="R22">R-22 (Legacy Transición)</option>
               </select>
             </div>
-            <span id="calc-pt-summary" class="text-xs font-mono px-2.5 py-1 rounded bg-slate-950 text-slate-300 border border-slate-800">
+            <span id="calc-pt-summary" class="text-xs font-mono px-2.5 py-1 rounded bg-[#091224] text-[#8ca4c8] border border-[#1e3256]">
               T. Evap Sat: -°C | T. Cond Sat: -°C
             </span>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
-              <label class="text-[11px] text-slate-400 block mb-1">Presión de Succión (Baja PSI)</label>
-              <input type="number" step="0.5" id="inp-suction-psi" value="28" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white text-center font-bold">
+            <div class="flex flex-col gap-1">
+              <label class="text-xs text-[#8ca4c8] block font-medium">Presión de Succión (Baja PSI)</label>
+              <input type="number" step="0.5" id="inp-suction-psi" value="28" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white text-center font-bold">
             </div>
-            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
-              <label class="text-[11px] text-slate-400 block mb-1">Temp. Línea Succión (°C)</label>
-              <input type="number" step="0.5" id="inp-suction-temp" value="-28" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white text-center font-bold">
+            <div class="flex flex-col gap-1">
+              <label class="text-xs text-[#8ca4c8] block font-medium">Temp. Línea Succión (°C)</label>
+              <input type="number" step="0.5" id="inp-suction-temp" value="-28" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white text-center font-bold">
             </div>
-            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
-              <label class="text-[11px] text-slate-400 block mb-1">Presión de Descarga (Alta PSI)</label>
-              <input type="number" step="0.5" id="inp-discharge-psi" value="240" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white text-center font-bold">
+            <div class="flex flex-col gap-1">
+              <label class="text-xs text-[#8ca4c8] block font-medium">Presión de Descarga (Alta PSI)</label>
+              <input type="number" step="0.5" id="inp-discharge-psi" value="240" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white text-center font-bold">
             </div>
-            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
-              <label class="text-[11px] text-slate-400 block mb-1">Temp. Línea Líquido (°C)</label>
-              <input type="number" step="0.5" id="inp-liquid-temp" value="36" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white text-center font-bold">
+            <div class="flex flex-col gap-1">
+              <label class="text-xs text-[#8ca4c8] block font-medium">Temp. Línea Líquido (°C)</label>
+              <input type="number" step="0.5" id="inp-liquid-temp" value="36" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white text-center font-bold">
             </div>
           </div>
 
           <!-- Result Diagnostic Display -->
-          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div class="border-t border-[#1e3256] pt-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div class="flex items-center gap-6">
               <div>
-                <span class="text-[10px] text-slate-400 uppercase tracking-wider block">Recalentamiento (Superheat)</span>
-                <span id="disp-superheat-val" class="text-base font-extrabold text-cyan-400 font-mono">0.0 °C</span>
-                <span id="disp-superheat-status" class="text-[10px] block text-slate-400">Rango Seguro (4 a 9°C)</span>
+                <span class="text-[11px] text-[#8ca4c8] uppercase tracking-wider block font-bold">Recalentamiento (Superheat)</span>
+                <span id="disp-superheat-val" class="text-xl font-black text-[#38bdf8] font-mono">0.0 °C</span>
+                <span id="disp-superheat-status" class="text-xs block text-[#718ab0]">Rango Seguro (4 a 9°C)</span>
               </div>
-              <div class="border-l border-slate-800 pl-6">
-                <span class="text-[10px] text-slate-400 uppercase tracking-wider block">Subenfriamiento (Subcooling)</span>
-                <span id="disp-subcooling-val" class="text-base font-extrabold text-blue-400 font-mono">0.0 °C</span>
-                <span id="disp-subcooling-status" class="text-[10px] block text-slate-400">Rango Seguro (4 a 9°C)</span>
+              <div class="border-l border-[#1e3256] pl-6">
+                <span class="text-[11px] text-[#8ca4c8] uppercase tracking-wider block font-bold">Subenfriamiento (Subcooling)</span>
+                <span id="disp-subcooling-val" class="text-xl font-black text-[#60a5fa] font-mono">0.0 °C</span>
+                <span id="disp-subcooling-status" class="text-xs block text-[#718ab0]">Rango Seguro (4 a 9°C)</span>
               </div>
             </div>
 
-            <div id="disp-diagnosis-box" class="bg-slate-900/80 p-3 rounded-lg border border-slate-800 text-xs md:max-w-md">
+            <div id="disp-diagnosis-box" class="p-3 border-l-2 border-[#38bdf8] text-xs md:max-w-md">
               <div class="font-bold text-white mb-0.5" id="disp-diagnosis-title">Diagnóstico: Evaluando...</div>
-              <p class="text-slate-400 text-[11px]" id="disp-diagnosis-desc">Modifique los valores para ver la acción sugerida.</p>
+              <p class="text-[#8ca4c8] text-[11px]" id="disp-diagnosis-desc">Modifique los valores para ver la acción sugerida.</p>
             </div>
           </div>
         </div>
@@ -283,10 +286,10 @@
 
       <!-- TAB: COMPRESSOR & ASSETS HEALTH -->
       <section id="tab-assets" class="tab-content hidden space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-l-4 border-[#34d399] pl-3">
           <div>
-            <h2 class="text-xl font-bold text-white tracking-tight">Salud Predictiva de Compresores & Respaldo Eléctrico</h2>
-            <p class="text-xs text-slate-400">Asset Health Scoring (0 a 100), pruebas de acidez de aceite y grupos electrógenos</p>
+            <h2 class="text-2xl font-black text-[#f0f6ff] tracking-tight">Salud Predictiva de Compresores & Respaldo Eléctrico</h2>
+            <p class="text-xs text-[#8ca4c8]">Asset Health Scoring (0 a 100), pruebas de acidez de aceite y grupos electrógenos</p>
           </div>
         </div>
 
@@ -297,12 +300,12 @@
 
       <!-- TAB: DUAL-CURRENCY CONTRACTS -->
       <section id="tab-contracts" class="tab-content hidden space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-l-4 border-[#60a5fa] pl-3">
           <div>
-            <h2 class="text-xl font-bold text-white tracking-tight">Abonos Bimonetarios de Mantenimiento (ARS / USD)</h2>
-            <p class="text-xs text-slate-400">Gestión de cuotas de mano de obra en pesos y fondo de repuestos importados en dólares</p>
+            <h2 class="text-2xl font-black text-[#f0f6ff] tracking-tight">Abonos Bimonetarios de Mantenimiento (ARS / USD)</h2>
+            <p class="text-xs text-[#8ca4c8]">Gestión de cuotas de mano de obra en pesos y fondo de repuestos importados en dólares</p>
           </div>
-          <button id="btn-new-contract-modal" class="touch-target px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow transition flex items-center gap-1.5">
+          <button id="btn-new-contract-modal" class="touch-target px-3.5 py-2 rounded-lg bg-[#0284c7] hover:bg-[#0369a1] text-white text-xs font-bold shadow transition flex items-center gap-1.5">
             <span>+</span> <span>Nuevo Abono Bimonetario</span>
           </button>
         </div>
@@ -316,47 +319,45 @@
 
   <!-- MODAL: NUEVA GUARDIA 24/7 -->
   <div id="modal-new-emergency" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
-    <div class="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-lg p-6 space-y-4 shadow-2xl">
-      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+    <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl w-full max-w-lg p-6 space-y-4 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-[#1e3256] pb-3">
         <h3 class="text-base font-bold text-white">Despacho Inmediato de Guardia 24/7</h3>
-        <button id="btn-close-emergency-modal" class="text-slate-400 hover:text-white text-lg">✕</button>
+        <button id="btn-close-emergency-modal" class="text-[#8ca4c8] hover:text-white text-xl font-bold">✕</button>
       </div>
       <form id="form-create-emergency" class="space-y-3">
         <div>
-          <label class="text-xs text-slate-400 block mb-1">Planta / Establecimiento</label>
-          <input type="text" id="inp-emg-facility" required placeholder="Ej: Frigorífico Regional Sur" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white">
+          <label class="text-xs text-[#8ca4c8] block mb-1">Planta / Establecimiento</label>
+          <input type="text" id="inp-emg-facility" required placeholder="Ej: Frigorífico Regional Sur" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white">
         </div>
         <div>
-          <label class="text-xs text-slate-400 block mb-1">Dirección Exacta</label>
-          <input type="text" id="inp-emg-address" required placeholder="Ej: Parque Industrial Alvear Lote 14" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white">
+          <label class="text-xs text-[#8ca4c8] block mb-1">Dirección Exacta</label>
+          <input type="text" id="inp-emg-address" required placeholder="Ruta 2 Km 45, Parque Industrial" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white">
         </div>
         <div class="grid grid-cols-2 gap-3">
           <div>
-            <label class="text-xs text-slate-400 block mb-1">Identificador de Cámara / Equipo</label>
-            <input type="text" id="inp-emg-equip" required placeholder="Ej: CAM-SUPER-01" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white font-mono">
+            <label class="text-xs text-[#8ca4c8] block mb-1">Cámara / Equipo Afectado</label>
+            <input type="text" id="inp-emg-chamber" required placeholder="Cámara 3 Congelados (-18°C)" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white">
           </div>
           <div>
-            <label class="text-xs text-slate-400 block mb-1">Severidad & SLA</label>
-            <select id="inp-emg-severity" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white">
-              <option value="CRITICA_ROTURA_FRIO">🚨 Crítica Frío (&lt;120 min)</option>
-              <option value="ALTA_VRF_CONFORT">⚡ Alta VRF / Confort (&lt;240 min)</option>
-              <option value="MEDIA_PREVENTIVO">📅 Preventivo Programado</option>
+            <label class="text-xs text-[#8ca4c8] block mb-1">Severidad de Cadena de Frío</label>
+            <select id="inp-emg-severity" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white">
+              <option value="CRITICAL_PERISHABLE">Rotura Crítica (SLA &lt; 120m)</option>
+              <option value="ALARM_HIGH_TEMP">Alarma de Temperatura Alta</option>
+              <option value="SOLAR_BACKUP_FAIL">Falla de Inversor / Generador</option>
             </select>
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-3">
-          <div>
-            <label class="text-xs text-slate-400 block mb-1">Temp. Consigna (°C)</label>
-            <input type="number" id="inp-emg-target-temp" value="-18" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white font-mono">
-          </div>
-          <div>
-            <label class="text-xs text-slate-400 block mb-1">Temp. Actual Observada (°C)</label>
-            <input type="number" id="inp-emg-current-temp" value="-3" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white font-mono text-rose-400">
-          </div>
+        <div>
+          <label class="text-xs text-[#8ca4c8] block mb-1">Teléfono de Contacto (WhatsApp)</label>
+          <input type="text" id="inp-emg-phone" required placeholder="+5491144447777" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white font-mono">
         </div>
-        <div class="pt-3 flex justify-end gap-2 border-t border-slate-800">
-          <button type="button" id="btn-cancel-emergency" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium">Cancelar</button>
-          <button type="submit" class="px-4 py-2 rounded-lg bg-rose-600 hover:bg-rose-500 text-white text-xs font-semibold shadow">Disparar Alerta a Cuadrilla de Guardia</button>
+        <div>
+          <label class="text-xs text-[#8ca4c8] block mb-1">Síntoma Técnico Reportado</label>
+          <textarea id="inp-emg-desc" rows="2" required placeholder="Compresor no arranca por presostato de baja, escarcha excesiva..." class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white"></textarea>
+        </div>
+        <div class="pt-3 flex justify-end gap-2 border-t border-[#1e3256]">
+          <button type="button" id="btn-cancel-emergency" class="px-4 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#c5d7ed] text-xs font-medium">Cancelar</button>
+          <button type="submit" class="px-4 py-2 rounded-lg bg-[#e11d48] hover:bg-[#be123c] text-white text-xs font-bold shadow">Despachar Cuadrilla de Urgencia</button>
         </div>
       </form>
     </div>

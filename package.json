@@ -1,6 +1,6 @@
 {
   "name": "climatrack",
-  "version": "1.0.00",
+  "version": "1.0.01",
   "description": "Frío Industrial, Cámaras Frigoríficas, Climatización Central HVAC y Mantenimiento de Energía Solar y Grupos Electrógenos",
   "type": "module",
   "main": "src/main.js",

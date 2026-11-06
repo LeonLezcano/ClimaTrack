@@ -267,10 +267,10 @@ class ClimaTrackApp {
       const isTarget = btn.getAttribute('data-tab') === tabId;
       if (isTarget) {
         btn.classList.add('text-rose-400', 'font-semibold');
-        btn.classList.remove('text-slate-400');
+        btn.classList.remove('text-[#8ca4c8]');
       } else {
         btn.classList.remove('text-rose-400', 'font-semibold');
-        btn.classList.add('text-slate-400');
+        btn.classList.add('text-[#8ca4c8]');
       }
     });
 
@@ -399,7 +399,7 @@ class ClimaTrackApp {
     if (!tbody) return;
 
     if (this.orders.length === 0) {
-      Sanitizer.safeSetInnerHTML(tbody, '<tr><td colspan="8" class="py-4 text-center text-slate-500">No hay partes de servicio registrados</td></tr>');
+      Sanitizer.safeSetInnerHTML(tbody, '<tr><td colspan="8" class="py-4 text-center text-[#718ab0]">No hay partes de servicio registrados</td></tr>');
       return;
     }
 
@@ -408,12 +408,12 @@ class ClimaTrackApp {
       const sealPreview = o.cryptoSeal ? `${o.cryptoSeal.slice(0, 12)}...` : 'Pendiente';
       return `
         <tr class="hover:bg-slate-800/40 transition">
-          <td class="py-3 font-mono font-bold text-cyan-400">${Sanitizer.escapeHTML(o.orderId)}</td>
+          <td class="py-3 font-mono font-bold text-[#38bdf8]">${Sanitizer.escapeHTML(o.orderId)}</td>
           <td class="py-3 font-medium text-white">${Sanitizer.escapeHTML(o.facilityName)}</td>
-          <td class="py-3 font-mono text-slate-300 text-xs">${Sanitizer.escapeHTML(o.equipmentTag)}</td>
+          <td class="py-3 font-mono text-[#c5d7ed] text-xs">${Sanitizer.escapeHTML(o.equipmentTag)}</td>
           <td class="py-3 font-mono font-semibold text-cyan-300">${Sanitizer.escapeHTML(o.gasType)}</td>
-          <td class="py-3 font-mono text-slate-300">${Formatters.temperature(o.thermodynamics?.superheat?.superheatCelsius)}</td>
-          <td class="py-3 font-mono text-slate-300">${Formatters.temperature(o.thermodynamics?.subcooling?.subcoolingCelsius)}</td>
+          <td class="py-3 font-mono text-[#c5d7ed]">${Formatters.temperature(o.thermodynamics?.superheat?.superheatCelsius)}</td>
+          <td class="py-3 font-mono text-[#c5d7ed]">${Formatters.temperature(o.thermodynamics?.subcooling?.subcoolingCelsius)}</td>
           <td class="py-3"><span class="${badge.badgeClass}">${badge.label}</span></td>
           <td class="py-3 font-mono text-[10px] text-emerald-400">${Sanitizer.escapeHTML(sealPreview)}</td>
         </tr>
@@ -428,7 +428,7 @@ class ClimaTrackApp {
     if (!container) return;
 
     if (this.emergencies.length === 0) {
-      Sanitizer.safeSetInnerHTML(container, '<div class="col-span-3 py-8 text-center text-slate-500">No hay guardias de emergencia activas. Cadena de frío asegurada.</div>');
+      Sanitizer.safeSetInnerHTML(container, '<div class="col-span-3 py-8 text-center text-[#718ab0]">No hay guardias de emergencia activas. Cadena de frío asegurada.</div>');
       return;
     }
 
@@ -446,11 +446,11 @@ class ClimaTrackApp {
       }
 
       return `
-        <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-3 shadow-md ${sla.isBreached ? 'border-rose-500/50' : ''}">
-          <div class="flex items-center justify-between border-b border-slate-800/80 pb-2">
+        <div class="bg-[#091224] border border-[#1e3256] rounded-xl p-4 space-y-3 shadow-md ${sla.isBreached ? 'border-rose-500/50' : ''}">
+          <div class="flex items-center justify-between border-b border-[#1e3256]/80 pb-2">
             <div class="flex items-center gap-2">
               <span class="font-mono font-bold text-sm text-rose-400">${Sanitizer.escapeHTML(e.ticketId)}</span>
-              <span class="text-[10px] px-2 py-0.5 rounded font-semibold ${sla.isBreached ? 'bg-rose-500/20 text-rose-400 border border-rose-500/30' : 'bg-slate-800 text-slate-300'}">
+              <span class="text-[10px] px-2 py-0.5 rounded font-semibold ${sla.isBreached ? 'bg-rose-500/20 text-rose-400 border border-rose-500/30' : 'bg-slate-800 text-[#c5d7ed]'}">
                 ${sla.urgencyState.replace(/_/g, ' ')}
               </span>
             </div>
@@ -461,18 +461,18 @@ class ClimaTrackApp {
 
           <div>
             <h4 class="font-bold text-sm text-white">${Sanitizer.escapeHTML(e.facilityName)}</h4>
-            <p class="text-xs text-slate-400 flex items-center gap-1 mt-0.5">
+            <p class="text-xs text-[#8ca4c8] flex items-center gap-1 mt-0.5">
               <span>📍</span> <span>${Sanitizer.escapeHTML(e.facilityAddress)}</span>
             </p>
           </div>
 
-          <div class="grid grid-cols-2 gap-2 text-xs bg-slate-900/60 p-2.5 rounded-lg border border-slate-800/50">
+          <div class="grid grid-cols-2 gap-2 text-xs bg-[#0f1b30]/60 p-2.5 rounded-lg border border-[#1e3256]/50">
             <div>
-              <span class="text-slate-500 text-[10px] block">Cámara / Equipo</span>
-              <span class="font-mono font-bold text-cyan-400">${Sanitizer.escapeHTML(e.equipmentTag)}</span>
+              <span class="text-[#718ab0] text-[10px] block">Cámara / Equipo</span>
+              <span class="font-mono font-bold text-[#38bdf8]">${Sanitizer.escapeHTML(e.equipmentTag)}</span>
             </div>
             <div>
-              <span class="text-slate-500 text-[10px] block">Desvío Térmico</span>
+              <span class="text-[#718ab0] text-[10px] block">Desvío Térmico</span>
               <span class="font-mono font-bold text-rose-400">
                 ${Formatters.temperature(e.currentTempCelsius)} / Obj ${Formatters.temperature(e.targetTempCelsius)}
               </span>
@@ -487,8 +487,8 @@ class ClimaTrackApp {
           ` : ''}
 
           <!-- Action Buttons -->
-          <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-800/60">
-            <button class="btn-wa-dispatch px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs flex items-center gap-1" data-ticket-id="${Sanitizer.escapeHTML(e.ticketId)}">
+          <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-[#1e3256]/60">
+            <button class="btn-wa-dispatch px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[#c5d7ed] text-xs flex items-center gap-1" data-ticket-id="${Sanitizer.escapeHTML(e.ticketId)}">
               <span>💬</span> <span>Aviso Guardia WhatsApp</span>
             </button>
 
@@ -585,18 +585,18 @@ class ClimaTrackApp {
         const d = a.data;
         const badge = Formatters.healthBadge(d.healthScore);
         return `
-          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-3 shadow-md">
-            <div class="flex items-center justify-between border-b border-slate-800/80 pb-2">
-              <span class="font-mono font-bold text-sm text-cyan-400">${Sanitizer.escapeHTML(d.equipmentTag)}</span>
+          <div class="bg-[#091224] border border-[#1e3256] rounded-xl p-4 space-y-3 shadow-md">
+            <div class="flex items-center justify-between border-b border-[#1e3256]/80 pb-2">
+              <span class="font-mono font-bold text-sm text-[#38bdf8]">${Sanitizer.escapeHTML(d.equipmentTag)}</span>
               <span class="${badge.badgeClass}">${badge.label} (${d.healthScore}/100)</span>
             </div>
             <div>
               <h4 class="font-bold text-sm text-white">${Sanitizer.escapeHTML(a.facility)}</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Modelo: ${Sanitizer.escapeHTML(d.model)}</p>
+              <p class="text-xs text-[#8ca4c8] mt-0.5">Modelo: ${Sanitizer.escapeHTML(d.model)}</p>
             </div>
-            <div class="bg-slate-900/60 p-2.5 rounded-lg border border-slate-800/50 text-xs space-y-1">
-              <span class="text-slate-500 text-[10px] block font-semibold">Diagnóstico Predictivo:</span>
-              <p class="text-slate-300 italic">"${Sanitizer.escapeHTML(d.recommendation)}"</p>
+            <div class="bg-[#0f1b30]/60 p-2.5 rounded-lg border border-[#1e3256]/50 text-xs space-y-1">
+              <span class="text-[#718ab0] text-[10px] block font-semibold">Diagnóstico Predictivo:</span>
+              <p class="text-[#c5d7ed] italic">"${Sanitizer.escapeHTML(d.recommendation)}"</p>
             </div>
             ${d.deductions?.length > 0 ? `
               <div class="text-[11px] text-amber-300/90 bg-amber-500/10 p-2 rounded border border-amber-500/20">
@@ -608,8 +608,8 @@ class ClimaTrackApp {
       } else {
         const g = a.data;
         return `
-          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-3 shadow-md">
-            <div class="flex items-center justify-between border-b border-slate-800/80 pb-2">
+          <div class="bg-[#091224] border border-[#1e3256] rounded-xl p-4 space-y-3 shadow-md">
+            <div class="flex items-center justify-between border-b border-[#1e3256]/80 pb-2">
               <span class="font-mono font-bold text-sm text-emerald-400">⚡ ${Sanitizer.escapeHTML(g.generatorTag)}</span>
               <span class="text-[10px] px-2 py-0.5 rounded font-semibold ${g.readyForEmergency ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' : 'bg-rose-500/20 text-rose-400'}">
                 ${g.readyForEmergency ? 'Listo para Emergencia' : 'Requiere Asistencia'}
@@ -617,10 +617,10 @@ class ClimaTrackApp {
             </div>
             <div>
               <h4 class="font-bold text-sm text-white">${Sanitizer.escapeHTML(a.facility)}</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Score de Arranque: <strong class="text-white font-mono">${g.score}/100</strong></p>
+              <p class="text-xs text-[#8ca4c8] mt-0.5">Score de Arranque: <strong class="text-white font-mono">${g.score}/100</strong></p>
             </div>
-            <div class="bg-slate-900/60 p-2.5 rounded-lg border border-slate-800/50 text-xs">
-              <span class="text-slate-500 text-[10px] block">Test Conmutación ATS:</span>
+            <div class="bg-[#0f1b30]/60 p-2.5 rounded-lg border border-[#1e3256]/50 text-xs">
+              <span class="text-[#718ab0] text-[10px] block">Test Conmutación ATS:</span>
               <span class="text-emerald-400 font-semibold font-mono">✔ Verificado OK (Cero retardo)</span>
             </div>
           </div>
@@ -636,13 +636,13 @@ class ClimaTrackApp {
     if (!container) return;
 
     if (this.contracts.length === 0) {
-      Sanitizer.safeSetInnerHTML(container, '<div class="col-span-3 py-8 text-center text-slate-500">No hay contratos bimonetarios registrados.</div>');
+      Sanitizer.safeSetInnerHTML(container, '<div class="col-span-3 py-8 text-center text-[#718ab0]">No hay contratos bimonetarios registrados.</div>');
       return;
     }
 
     const cardsHtml = this.contracts.map(c => `
-      <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-3 shadow-md">
-        <div class="flex items-center justify-between border-b border-slate-800/80 pb-2">
+      <div class="bg-[#091224] border border-[#1e3256] rounded-xl p-4 space-y-3 shadow-md">
+        <div class="flex items-center justify-between border-b border-[#1e3256]/80 pb-2">
           <span class="font-mono font-bold text-sm text-blue-400">${Sanitizer.escapeHTML(c.contractId)}</span>
           <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-semibold border bg-emerald-500/20 text-emerald-400 border-emerald-500/40">
             ${Sanitizer.escapeHTML(c.status)}
@@ -651,21 +651,21 @@ class ClimaTrackApp {
 
         <div>
           <h4 class="font-bold text-sm text-white">${Sanitizer.escapeHTML(c.customerName)}</h4>
-          <p class="text-xs text-slate-400 mt-0.5">${Sanitizer.escapeHTML(c.facilityName)}</p>
+          <p class="text-xs text-[#8ca4c8] mt-0.5">${Sanitizer.escapeHTML(c.facilityName)}</p>
         </div>
 
-        <div class="grid grid-cols-2 gap-2 text-xs bg-slate-900/60 p-2.5 rounded-lg border border-slate-800/50">
+        <div class="grid grid-cols-2 gap-2 text-xs bg-[#0f1b30]/60 p-2.5 rounded-lg border border-[#1e3256]/50">
           <div>
-            <span class="text-slate-500 text-[10px] block">Mano de Obra (ARS)</span>
+            <span class="text-[#718ab0] text-[10px] block">Mano de Obra (ARS)</span>
             <span class="font-mono font-bold text-white">${Formatters.currencyARS(c.pricing?.monthlyFeeArs)}</span>
           </div>
           <div>
-            <span class="text-slate-500 text-[10px] block">Fondo Repuestos (USD)</span>
-            <span class="font-mono font-bold text-cyan-400">${Formatters.currencyUSD(c.pricing?.partsCapUsd)}</span>
+            <span class="text-[#718ab0] text-[10px] block">Fondo Repuestos (USD)</span>
+            <span class="font-mono font-bold text-[#38bdf8]">${Formatters.currencyUSD(c.pricing?.partsCapUsd)}</span>
           </div>
         </div>
 
-        <div class="text-[11px] bg-slate-900 p-2 rounded border border-slate-800 text-slate-400 flex items-center justify-between">
+        <div class="text-[11px] bg-[#0f1b30] p-2 rounded border border-[#1e3256] text-[#8ca4c8] flex items-center justify-between">
           <span>Equipos Cubiertos:</span>
           <span class="font-mono text-slate-200">${c.equipmentCovered?.length || 0} unidades</span>
         </div>
