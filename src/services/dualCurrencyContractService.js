@@ -25,7 +25,13 @@ export class DualCurrencyContractService {
 
     const id = contractId || `CTR-${Date.now().toString(36).slice(-4)}-${Math.random().toString(36).slice(2, 6)}`;
     const now = new Date();
-    const nextDue = new Date(now.getFullYear(), now.getMonth(), dueDayOfMonth).toISOString();
+    // Si el día del mes actual ya superó dueDayOfMonth, el vencimiento es el próximo mes
+    let dueYear = now.getFullYear();
+    let dueMonth = now.getMonth();
+    if (now.getDate() > dueDayOfMonth) {
+      dueMonth++;
+    }
+    const nextDue = new Date(dueYear, dueMonth, dueDayOfMonth).toISOString();
 
     return {
       contractId: id,
