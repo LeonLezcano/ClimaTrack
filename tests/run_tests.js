@@ -570,6 +570,49 @@ it('package.json and version.json versions match', () => {
   assert.equal(pkg.version, ver.version, 'Versions are identical');
 });
 
+it('Offline cache saves and retrieves tickets, contracts, and assets', () => {
+  ClimaTrackCacheService.resetPurgeForTesting();
+  ClimaTrackCacheService.saveTickets([emergencyTicket]);
+  ClimaTrackCacheService.saveContracts([contractSample]);
+  ClimaTrackCacheService.saveAssets([{ type: 'GENERATOR', data: { generatorTag: 'GEN-1', atsAutomaticTransferPassed: false } }]);
+  assert.equal(ClimaTrackCacheService.getTickets().length, 1);
+  assert.equal(ClimaTrackCacheService.getContracts().length, 1);
+  assert.equal(ClimaTrackCacheService.getAssets().length, 1);
+  ClimaTrackCacheService.purgeData();
+  assert.equal(ClimaTrackCacheService.getTickets().length, 0);
+  assert.equal(ClimaTrackCacheService.getContracts().length, 0);
+  assert.equal(ClimaTrackCacheService.getAssets().length, 0);
+  ClimaTrackCacheService.resetPurgeForTesting();
+});
+
+it('Backup power evaluation exposes atsAutomaticTransferPassed accurately', () => {
+  const failGen = CompressorHealthScoring.evaluateBackupPower({
+    fuelLevelPercentage: 90,
+    batteryVoltageVolts: 26.5,
+    atsAutomaticTransferPassed: false
+  });
+  assert.equal(failGen.atsAutomaticTransferPassed, false);
+  assert.equal(failGen.readyForEmergency, false);
+});
+
+it('Offline-first PWA assets and strict CSP are configured in firebase.json, sw.js, and index.html', () => {
+  const fb = JSON.parse(fs.readFileSync('firebase.json', 'utf8'));
+  const cspHeader = fb.hosting.headers[0].headers.find(h => h.key === 'Content-Security-Policy');
+  assert(!cspHeader.value.includes('cdn.tailwindcss.com'), 'CSP does not reference cdn.tailwindcss.com');
+  assert(!cspHeader.value.includes("'unsafe-inline'"), 'CSP does not allow unsafe-inline');
+  const swHeaderRule = fb.hosting.headers.find(h => h.source === '/sw.js');
+  assert(swHeaderRule, 'firebase.json configures /sw.js header');
+  const swCode = fs.readFileSync('sw.js', 'utf8');
+  assert(swCode.includes('./styles.css') && swCode.includes('./src/main.js'), 'sw.js precaches local styles and main.js');
+  assert(!swCode.includes('./src/app.js'), 'sw.js does not reference nonexistent app.js');
+  const html = fs.readFileSync('index.html', 'utf8');
+  assert(!html.includes('cdn.tailwindcss.com'), 'index.html uses local styles.css instead of CDN');
+  assert(!html.includes('user-scalable=no'), 'index.html allows pinch-zoom');
+  assert(!html.includes('—'), 'index.html contains no em dashes');
+  assert(html.includes('id="inp-emg-chamber"') && html.includes('id="inp-emg-target-temp"') && html.includes('id="inp-emg-current-temp"'), 'Emergency form fields match handler');
+  assert(html.includes('CRITICA_ROTURA_FRIO') && html.includes('ALTA_VRF_CONFORT') && html.includes('MEDIA_PREVENTIVO'), 'Emergency severity options match SLA_TIERS');
+});
+
 console.log('\n======================================================================');
 console.log(`  TOTAL: ${passedTests} tests | ${passedTests} PASSED | 0 FAILED`);
 console.log('======================================================================\n');

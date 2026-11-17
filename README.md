@@ -1,8 +1,17 @@
-# ❄️ ClimaTrack — Frío Industrial, Cámaras Frigoríficas, HVAC & Mantenimiento de Energía Solar / Grupos Electrógenos
+# ClimaTrack - Frío Industrial, Cámaras Frigoríficas, HVAC y Energía de Respaldo
 
-> **Versión:** `v1.0.00`  
+> **Versión:** `v1.0.02`  
 > **Arquetipo:** Critical Cold-Chain Logistics, Industrial Refrigeration & Backup Energy Maintenance  
 > **Estándar:** AiAppFactory Invariants, Thermodynamic P-T Physics, Pure Cryptographic Seals (SHA-256) & Zero-Sink DOM Security
+
+---
+
+## Resumen de Remediación UX/UI, Accesibilidad y Offline-First (`v1.0.02`)
+
+- **Dirección Visual (`DESIGN.md`):** Consola operativa de alto contraste para salas de máquinas y cámaras frigoríficas, jerarquía tipográfica descendente (`h1 > h2 > h3 > body`), tarjetas planas con divisores simples y reemplazo de emojis decorativos por iconos SVG uniformes.
+- **Accesibilidad y Ergonomía Móvil:** Zoom habilitado en viewport, áreas táctiles `>= 44x44px` (`.touch-target`), modales accesibles (`role="dialog"`, cierre con `Escape`, gestión de foco) en reemplazo de `prompt()`, atributos `<label for>`, roles ARIA en pestañas, anillos `:focus-visible` y contraste WCAG AA (`>= 4.5:1`).
+- **Transparencia y Persistencia Local:** Etiquetado explícito `[DEMO]` para registros de muestra, botón de purga demo conectado a `ClimaTrackCacheService`, estado de red real vía `navigator.onLine`, cálculo de transferencia ATS desde `atsAutomaticTransferPassed` y captura real de mediciones y firmas ePOD al cerrar guardias.
+- **PWA Offline-First:** CSS compilado localmente en `styles.css` (sin `cdn.tailwindcss.com` ni `'unsafe-inline'`), `manifest.json`, registro CSP-safe en `src/sw-register.js`, precaché completo en `sw.js` y cabecera `Cache-Control: no-cache, no-store, must-revalidate` en `firebase.json` para `/sw.js`.
 
 ---
 
@@ -46,7 +55,7 @@ El sistema protege activamente la cadena de frío contra pérdidas millonarias p
 
 ---
 
-## 🧪 Arnés de Pruebas Multi-Capa (66 Tests — 100% PASS)
+## Arnés de Pruebas Multi-Capa (69 Tests - 100% PASS)
 
 ```bash
 # Ejecución de la suite completa de pruebas

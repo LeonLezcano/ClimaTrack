@@ -126,6 +126,10 @@ export class CompressorHealthScoring {
 
     return {
       generatorTag,
+      fuelLevelPercentage,
+      batteryVoltageVolts,
+      atsAutomaticTransferPassed,
+      lastRunHours,
       score: finalScore,
       readyForEmergency: finalScore >= 70,
       alerts

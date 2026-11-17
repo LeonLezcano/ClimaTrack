@@ -7,6 +7,7 @@ const PURGE_FLAG = 'climatrack_demo_purged';
 const STORAGE_KEY_ORDERS = 'climatrack_orders_v1';
 const STORAGE_KEY_TICKETS = 'climatrack_tickets_v1';
 const STORAGE_KEY_CONTRACTS = 'climatrack_contracts_v1';
+const STORAGE_KEY_ASSETS = 'climatrack_assets_v1';
 
 const memoryStore = new Map();
 
@@ -33,6 +34,17 @@ function removeStorageItem(key) {
   }
 }
 
+function safeReadArray(key) {
+  try {
+    const raw = getStorageItem(key);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
 export class ClimaTrackCacheService {
   static isPurged() {
     return getStorageItem(PURGE_FLAG) === 'true';
@@ -43,6 +55,7 @@ export class ClimaTrackCacheService {
     removeStorageItem(STORAGE_KEY_ORDERS);
     removeStorageItem(STORAGE_KEY_TICKETS);
     removeStorageItem(STORAGE_KEY_CONTRACTS);
+    removeStorageItem(STORAGE_KEY_ASSETS);
   }
 
   static resetPurgeForTesting() {
@@ -62,7 +75,30 @@ export class ClimaTrackCacheService {
   }
 
   static getOrders() {
-    const raw = getStorageItem(STORAGE_KEY_ORDERS);
-    return raw ? JSON.parse(raw) : [];
+    return safeReadArray(STORAGE_KEY_ORDERS);
+  }
+
+  static saveTickets(tickets = []) {
+    setStorageItem(STORAGE_KEY_TICKETS, JSON.stringify(tickets));
+  }
+
+  static getTickets() {
+    return safeReadArray(STORAGE_KEY_TICKETS);
+  }
+
+  static saveContracts(contracts = []) {
+    setStorageItem(STORAGE_KEY_CONTRACTS, JSON.stringify(contracts));
+  }
+
+  static getContracts() {
+    return safeReadArray(STORAGE_KEY_CONTRACTS);
+  }
+
+  static saveAssets(assets = []) {
+    setStorageItem(STORAGE_KEY_ASSETS, JSON.stringify(assets));
+  }
+
+  static getAssets() {
+    return safeReadArray(STORAGE_KEY_ASSETS);
   }
 }

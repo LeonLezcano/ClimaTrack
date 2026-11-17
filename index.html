@@ -2,72 +2,92 @@
 <html lang="es" class="h-full bg-[#080f1d] text-[#e2ecf9]">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>ClimaTrack v1.0.01 — Frío Industrial, HVAC & Energía Solar / Grupos</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2306b6d4'><path d='M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14'/></svg>">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @media print {
-      .no-print { display: none !important; }
-      body { background: white !important; color: black !important; }
-    }
-    .touch-target { min-height: 44px; min-width: 44px; }
-    h1 { font-size: 1.75rem; line-height: 2.25rem; font-weight: 800; }
-    h2 { font-size: 1.5rem; line-height: 2rem; font-weight: 800; }
-    h3 { font-size: 1.15rem; line-height: 1.75rem; font-weight: 700; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c1629">
+  <title>ClimaTrack: Frío Industrial, HVAC y Energía Solar</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2338bdf8' stroke-width='2' stroke-linecap='round'><path d='M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14'/></svg>">
+  <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="h-full flex flex-col font-sans text-sm antialiased select-none bg-[#080f1d]">
-  <!-- Top Navigation Bar: Cryogenic Telemetry Header -->
-  <header class="no-print bg-[#0c1629] border-b border-[#1b2b48] sticky top-0 z-40 px-4 py-3 flex items-center justify-between shadow-md">
-    <div class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-lg bg-[#0e253d] border border-[#1a4b75] flex items-center justify-center text-xl text-[#38bdf8]">
-        ❄️
+<body class="min-h-full flex flex-col font-sans text-sm antialiased bg-[#080f1d] text-[#e2ecf9]">
+  <!-- Top Navigation Bar -->
+  <header class="no-print bg-[#0c1629] border-b border-[#1e3256] sticky top-0 z-40 px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3 min-w-0">
+      <div class="w-10 h-10 rounded-lg bg-[#0f1b30] border border-[#1e3256] flex items-center justify-center text-[#38bdf8] shrink-0">
+        <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/>
+        </svg>
       </div>
-      <div>
-        <div class="flex items-center gap-2">
-          <h1 class="font-black text-base md:text-lg tracking-tight text-[#f0f6ff]">ClimaTrack</h1>
-          <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-[#0b2436] text-[#38bdf8] border border-[#14476b] font-bold">v1.0.01</span>
-          <span id="network-badge" class="text-[11px] font-mono px-2 py-0.5 rounded bg-[#0b291d] text-[#34d399] border border-[#14523b] font-bold">ONLINE</span>
+      <div class="min-w-0">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="font-extrabold text-base md:text-lg tracking-tight text-[#f0f6ff]">ClimaTrack</span>
+          <span id="network-badge" role="status" aria-live="polite" class="text-xs font-mono px-2.5 py-0.5 rounded bg-[#0b291d] text-[#34d399] border border-[#14523b] font-semibold">
+            En línea
+          </span>
         </div>
-        <p class="text-xs text-[#8ca4c8] hidden sm:block">Frío Industrial, Cámaras Frigoríficas, HVAC & Mantenimiento de Energía</p>
+        <p class="text-xs text-[#94add1] hidden sm:block truncate">Frío Industrial, Cámaras Frigoríficas, HVAC y Respaldo Eléctrico</p>
       </div>
     </div>
 
     <!-- Quick Action Buttons -->
-    <div class="flex items-center gap-2">
-      <button id="btn-export-csv" class="no-print touch-target px-3.5 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#d6e4f7] text-xs font-semibold border border-[#233b63] flex items-center gap-1.5 transition">
-        <span>📑</span> <span class="hidden md:inline">Exportar CSV</span>
+    <div class="flex flex-wrap items-center gap-2">
+      <button type="button" id="btn-purge-demo" class="no-print touch-target px-3 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#c5d7ed] text-xs font-semibold border border-[#233b63] flex items-center gap-1.5 transition">
+        <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/>
+        </svg>
+        <span class="hidden lg:inline">Limpiar Demo</span>
       </button>
-      <button id="btn-new-emergency" class="no-print touch-target px-3.5 py-2 rounded-lg bg-[#e11d48] hover:bg-[#be123c] text-white text-xs font-bold shadow flex items-center gap-1.5 transition">
-        <span>🚨</span> <span>Guardia 24/7</span>
+      <button type="button" id="btn-export-csv" class="no-print touch-target px-3 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#d6e4f7] text-xs font-semibold border border-[#233b63] flex items-center gap-1.5 transition">
+        <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/>
+        </svg>
+        <span class="hidden md:inline">Exportar CSV</span>
       </button>
-      <button id="btn-new-order" class="no-print touch-target px-4 py-2 rounded-lg bg-[#0284c7] hover:bg-[#0369a1] text-white text-xs font-bold shadow flex items-center gap-1.5 transition">
-        <span>+</span> <span>Nueva Orden</span>
+      <button type="button" id="btn-new-emergency" class="no-print touch-target px-3.5 py-2 rounded-lg bg-[#be123c] hover:bg-[#9f1239] text-white text-xs font-bold flex items-center gap-1.5 transition">
+        <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0zM12 9v4M12 17h.01"/>
+        </svg>
+        <span>Guardia 24/7</span>
+      </button>
+      <button type="button" id="btn-new-order" class="no-print touch-target px-3.5 py-2 rounded-lg bg-[#0369a1] hover:bg-[#075985] text-white text-xs font-bold flex items-center gap-1.5 transition">
+        <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+        <span>Nueva Orden</span>
       </button>
     </div>
   </header>
 
   <!-- Mobile Bottom Tab Navigation -->
-  <nav class="no-print sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#091224]/95 backdrop-blur border-t border-[#1b2b48] flex justify-around py-2 px-1">
-    <button data-tab="dashboard" class="tab-btn flex flex-col items-center text-xs text-[#8ca4c8] hover:text-white px-2 py-1 active:scale-95">
-      <span class="text-lg">📊</span>
+  <nav aria-label="Navegación móvil" role="tablist" class="no-print sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0c1629] border-t border-[#1e3256] flex justify-around py-1.5 px-1">
+    <button type="button" role="tab" aria-selected="false" aria-controls="tab-dashboard" id="mob-tab-dashboard" data-tab="dashboard" class="tab-btn touch-target flex flex-col items-center justify-center gap-0.5 text-xs text-[#c5d7ed] hover:text-white px-2 py-1 rounded-lg">
+      <svg aria-hidden="true" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/>
+      </svg>
       <span>Métricas</span>
     </button>
-    <button data-tab="emergencies" class="tab-btn flex flex-col items-center text-xs text-[#f43f5e] font-bold px-2 py-1 active:scale-95">
-      <span class="text-lg">🚨</span>
+    <button type="button" role="tab" aria-selected="true" aria-controls="tab-emergencies" id="mob-tab-emergencies" data-tab="emergencies" class="tab-btn touch-target flex flex-col items-center justify-center gap-0.5 text-xs text-[#fda4af] font-bold px-2 py-1 rounded-lg bg-[#29131a]">
+      <svg aria-hidden="true" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0zM12 9v4M12 17h.01"/>
+      </svg>
       <span>Guardias</span>
     </button>
-    <button data-tab="thermodynamics" class="tab-btn flex flex-col items-center text-xs text-[#8ca4c8] hover:text-white px-2 py-1 active:scale-95">
-      <span class="text-lg">🌡️</span>
+    <button type="button" role="tab" aria-selected="false" aria-controls="tab-thermodynamics" id="mob-tab-thermodynamics" data-tab="thermodynamics" class="tab-btn touch-target flex flex-col items-center justify-center gap-0.5 text-xs text-[#c5d7ed] hover:text-white px-2 py-1 rounded-lg">
+      <svg aria-hidden="true" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/>
+      </svg>
       <span>Gases P-T</span>
     </button>
-    <button data-tab="assets" class="tab-btn flex flex-col items-center text-xs text-[#8ca4c8] hover:text-white px-2 py-1 active:scale-95">
-      <span class="text-lg">⚙️</span>
+    <button type="button" role="tab" aria-selected="false" aria-controls="tab-assets" id="mob-tab-assets" data-tab="assets" class="tab-btn touch-target flex flex-col items-center justify-center gap-0.5 text-xs text-[#c5d7ed] hover:text-white px-2 py-1 rounded-lg">
+      <svg aria-hidden="true" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.6.79 1.02 1.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/>
+      </svg>
       <span>Equipos</span>
     </button>
-    <button data-tab="contracts" class="tab-btn flex flex-col items-center text-xs text-[#8ca4c8] hover:text-white px-2 py-1 active:scale-95">
-      <span class="text-lg">💵</span>
+    <button type="button" role="tab" aria-selected="false" aria-controls="tab-contracts" id="mob-tab-contracts" data-tab="contracts" class="tab-btn touch-target flex flex-col items-center justify-center gap-0.5 text-xs text-[#c5d7ed] hover:text-white px-2 py-1 rounded-lg">
+      <svg aria-hidden="true" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/>
+      </svg>
       <span>Abonos</span>
     </button>
   </nav>
@@ -75,112 +95,123 @@
   <!-- Main Layout -->
   <div class="flex-1 flex overflow-hidden">
     <!-- Desktop Sidebar -->
-    <aside class="no-print hidden sm:flex flex-col w-60 bg-[#0a1426] border-r border-[#1b2b48] p-4 gap-2">
-      <div class="text-[11px] font-mono uppercase tracking-wider text-[#8ca4c8] px-3 py-1 font-bold">Telemetría Frío</div>
-      <button data-tab="dashboard" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
-        <span class="text-base">📊</span> <span>Dashboard General</span>
-      </button>
-      <button data-tab="emergencies" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-bold text-[#f43f5e] bg-[#29131a] border border-[#541f2d] transition text-left">
-        <span class="text-base">🚨</span> <span>Guardias 24/7 & SLA</span>
-      </button>
-      <button data-tab="thermodynamics" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
-        <span class="text-base">🌡️</span> <span>Termodinámica & P-T</span>
-      </button>
-      <button data-tab="assets" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
-        <span class="text-base">⚙️</span> <span>Salud de Compresores</span>
-      </button>
-      <button data-tab="contracts" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
-        <span class="text-base">💵</span> <span>Abonos Bimonetarios</span>
-      </button>
+    <aside aria-label="Navegación lateral" class="no-print hidden sm:flex flex-col w-64 bg-[#0c1629] border-r border-[#1e3256] p-4 gap-3 shrink-0">
+      <div class="text-xs font-mono uppercase tracking-wider text-[#94add1] px-3 py-1 font-bold">Operación Frío</div>
+      <div role="tablist" aria-orientation="vertical" class="flex flex-col gap-1.5">
+        <button type="button" role="tab" aria-selected="false" aria-controls="tab-dashboard" id="desk-tab-dashboard" data-tab="dashboard" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
+          <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/>
+          </svg>
+          <span>Dashboard General</span>
+        </button>
+        <button type="button" role="tab" aria-selected="true" aria-controls="tab-emergencies" id="desk-tab-emergencies" data-tab="emergencies" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-bold text-[#fda4af] bg-[#29131a] border border-[#541f2d] transition text-left">
+          <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0zM12 9v4M12 17h.01"/>
+          </svg>
+          <span>Guardias 24/7 y SLA</span>
+        </button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="tab-thermodynamics" id="desk-tab-thermodynamics" data-tab="thermodynamics" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
+          <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/>
+          </svg>
+          <span>Termodinámica P-T</span>
+        </button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="tab-assets" id="desk-tab-assets" data-tab="assets" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
+          <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.6.79 1.02 1.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/>
+          </svg>
+          <span>Salud de Compresores</span>
+        </button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="tab-contracts" id="desk-tab-contracts" data-tab="contracts" class="tab-btn touch-target flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-medium text-[#c5d7ed] hover:bg-[#13223b] hover:text-white transition text-left">
+          <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/>
+          </svg>
+          <span>Abonos Bimonetarios</span>
+        </button>
+      </div>
 
-      <div class="mt-auto pt-4 border-t border-[#1b2b48]">
-        <div class="bg-[#0f1d35] rounded-lg p-3 border border-[#1f3459] text-xs text-[#8ca4c8] flex flex-col gap-1">
-          <div class="flex items-center justify-between text-[#e2ecf9] font-semibold">
-            <span>Sello Criptográfico</span>
-            <span class="text-[#34d399] font-mono">SHA-256</span>
-          </div>
-          <p class="text-[11px] text-[#8ca4c8]">Actas ePOD y partes de refrigeración blindados contra adulteración.</p>
+      <div class="mt-auto pt-4 border-t border-[#1e3256] space-y-1.5 text-xs text-[#94add1]">
+        <div class="flex items-center justify-between text-[#f0f6ff] font-semibold">
+          <span>Custodia ePOD</span>
+          <span class="text-[#34d399] font-mono">SHA-256</span>
         </div>
+        <p class="leading-relaxed">Actas y mediciones de refrigeración selladas localmente con digest SHA-256.</p>
+        <p id="app-version-label" class="font-mono text-[#94add1]">Versión 1.0.02</p>
       </div>
     </aside>
 
     <!-- Main Content Stage -->
-    <main class="flex-1 overflow-y-auto p-4 sm:p-6 pb-20 sm:pb-6 space-y-6">
-      
+    <main class="flex-1 overflow-y-auto bg-[#080f1d]">
+
       <!-- TAB: DASHBOARD -->
-      <section id="tab-dashboard" class="tab-content hidden space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-l-4 border-[#06b6d4] pl-3">
+      <section id="tab-dashboard" role="tabpanel" aria-labelledby="desk-tab-dashboard" class="tab-content hidden bg-[#080f1d] p-4 sm:p-6 pb-24 sm:pb-6 space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
           <div>
-            <h2 class="text-2xl font-black text-[#f0f6ff] tracking-tight">Centro de Control de Frío & Mantenimiento</h2>
-            <p class="text-xs text-[#8ca4c8]">Supervisión en tiempo real de cadenas de frío, SLAs críticos y flota de generadores</p>
-          </div>
-          <div class="flex gap-2">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-bold bg-[#0b2436] text-[#38bdf8] border border-[#14476b]">
-              ❄️ Guardia Activa 24/7
-            </span>
+            <h1 class="text-[1.75rem] leading-[2.15rem] font-extrabold text-[#f0f6ff] tracking-tight">Centro de Control de Frío y Mantenimiento</h1>
+            <p class="text-xs text-[#94add1] mt-1">Supervisión operativa de cadenas de frío, SLAs críticos y flota de generadores</p>
           </div>
         </div>
 
         <!-- Metric Cards -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
-            <span class="text-xs font-semibold uppercase tracking-wider text-[#8ca4c8]">Guardias Activas</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="print-surface bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
+            <span class="text-xs font-semibold uppercase tracking-wider text-[#94add1]">Guardias Activas</span>
             <div class="flex items-baseline gap-2 mt-1">
-              <span id="metric-active-emergencies" class="text-3xl font-black text-[#f43f5e] font-mono">0</span>
-              <span class="text-xs text-[#8ca4c8]">en curso</span>
+              <span id="metric-active-emergencies" class="text-3xl font-extrabold text-[#fb7185] font-mono tabular-nums">0</span>
+              <span class="text-xs text-[#94add1]">en curso</span>
             </div>
-            <span class="text-[11px] text-[#718ab0]">Emergencias con SLA estricto</span>
+            <span class="text-xs text-[#94add1]">Emergencias con SLA estricto</span>
           </div>
 
-          <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
-            <span class="text-xs font-semibold uppercase tracking-wider text-[#8ca4c8]">Gas Recargado Mes</span>
+          <div class="print-surface bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
+            <span class="text-xs font-semibold uppercase tracking-wider text-[#94add1]">Gas Recargado Mes</span>
             <div class="flex items-baseline gap-2 mt-1">
-              <span id="metric-total-gas-kg" class="text-3xl font-black text-[#38bdf8] font-mono">0.0</span>
-              <span class="text-xs text-[#8ca4c8]">kg netos</span>
+              <span id="metric-total-gas-kg" class="text-3xl font-extrabold text-[#38bdf8] font-mono tabular-nums">0.0</span>
+              <span class="text-xs text-[#94add1]">kg netos</span>
             </div>
-            <span class="text-[11px] text-[#718ab0]">R404A / R410A / R134a</span>
+            <span class="text-xs text-[#94add1]">R404A / R410A / R134a</span>
           </div>
 
-          <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
-            <span class="text-xs font-semibold uppercase tracking-wider text-[#8ca4c8]">Salud Promedio</span>
+          <div class="print-surface bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
+            <span class="text-xs font-semibold uppercase tracking-wider text-[#94add1]">Salud Promedio</span>
             <div class="flex items-baseline gap-2 mt-1">
-              <span id="metric-avg-health" class="text-3xl font-black text-[#34d399] font-mono">100</span>
-              <span class="text-xs text-[#8ca4c8]">/ 100</span>
+              <span id="metric-avg-health" class="text-3xl font-extrabold text-[#34d399] font-mono tabular-nums">100</span>
+              <span class="text-xs text-[#94add1]">/ 100</span>
             </div>
-            <span class="text-[11px] text-[#718ab0]">Score de compresores y chillers</span>
+            <span class="text-xs text-[#94add1]">Score de compresores y chillers</span>
           </div>
 
-          <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
-            <span class="text-xs font-semibold uppercase tracking-wider text-[#8ca4c8]">Abonos Activos</span>
+          <div class="print-surface bg-[#0f1b30] border border-[#1e3256] rounded-xl p-4 flex flex-col gap-1">
+            <span class="text-xs font-semibold uppercase tracking-wider text-[#94add1]">Abonos Activos</span>
             <div class="flex items-baseline gap-2 mt-1">
-              <span id="metric-active-contracts" class="text-3xl font-black text-[#60a5fa] font-mono">0</span>
-              <span class="text-xs text-[#8ca4c8]">plantas</span>
+              <span id="metric-active-contracts" class="text-3xl font-extrabold text-[#60a5fa] font-mono tabular-nums">0</span>
+              <span class="text-xs text-[#94add1]">plantas</span>
             </div>
-            <span class="text-[11px] text-[#718ab0]">Facturación bimonetaria ARS/USD</span>
+            <span class="text-xs text-[#94add1]">Facturación bimonetaria ARS/USD</span>
           </div>
         </div>
 
         <!-- Recent Service Orders Table -->
-        <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-5 space-y-4">
-          <div class="flex items-center justify-between border-b border-[#1e3256] pb-3">
-            <h3 class="text-sm font-bold text-[#f0f6ff]">Últimas Órdenes de Servicio y Partes Técnicos</h3>
-            <span class="text-xs text-[#38bdf8] font-mono font-bold">Tiempo Real</span>
+        <div class="print-surface bg-[#0f1b30] border border-[#1e3256] rounded-xl p-5 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e3256] pb-3">
+            <h2 class="text-lg font-bold text-[#f0f6ff]">Órdenes de Servicio y Partes Técnicos</h2>
+            <span id="orders-storage-label" class="text-xs text-[#94add1] font-mono">Almacenamiento Local</span>
           </div>
           <div class="overflow-x-auto">
-            <table class="w-full text-left text-xs text-[#c5d7ed]">
-              <thead class="text-[#8ca4c8] border-b border-[#1e3256] text-[11px] uppercase tracking-wider font-mono">
+            <table class="w-full text-left text-xs text-[#c5d7ed] tabular-nums">
+              <thead class="text-[#94add1] border-b border-[#1e3256] text-xs uppercase tracking-wider font-mono">
                 <tr>
-                  <th class="pb-2.5">Orden</th>
-                  <th class="pb-2.5">Cliente / Planta</th>
-                  <th class="pb-2.5">Equipo</th>
-                  <th class="pb-2.5">Gas</th>
-                  <th class="pb-2.5">Superheat</th>
-                  <th class="pb-2.5">Subcooling</th>
-                  <th class="pb-2.5">Estado</th>
-                  <th class="pb-2.5">Sello SHA-256</th>
+                  <th class="pb-3 pr-3">Orden</th>
+                  <th class="pb-3 pr-3">Cliente / Planta</th>
+                  <th class="pb-3 pr-3">Equipo</th>
+                  <th class="pb-3 pr-3">Gas</th>
+                  <th class="pb-3 pr-3">Superheat</th>
+                  <th class="pb-3 pr-3">Subcooling</th>
+                  <th class="pb-3 pr-3">Estado</th>
+                  <th class="pb-3">Sello SHA-256</th>
                 </tr>
               </thead>
-              <tbody id="dashboard-orders-tbody" class="divide-y divide-[#1b2b48] font-sans">
+              <tbody id="dashboard-orders-tbody" class="divide-y divide-[#1e3256] font-sans">
                 <!-- Dynamically injected -->
               </tbody>
             </table>
@@ -189,24 +220,30 @@
       </section>
 
       <!-- TAB: EMERGENCIES & 24/7 SLA -->
-      <section id="tab-emergencies" class="tab-content space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-l-4 border-[#f43f5e] pl-3">
+      <section id="tab-emergencies" role="tabpanel" aria-labelledby="desk-tab-emergencies" class="tab-content bg-[#080f1d] p-4 sm:p-6 pb-24 sm:pb-6 space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <h2 class="text-2xl font-black text-[#f0f6ff] tracking-tight">Despacho de Guardias 24/7 & SLA de Cadena de Frío</h2>
-            <p class="text-xs text-[#8ca4c8]">Monitoreo de roturas críticas de frío con reloj regresivo SLA &lt; 120 minutos</p>
+            <h1 class="text-[1.75rem] leading-[2.15rem] font-extrabold text-[#f0f6ff] tracking-tight">Despacho de Guardias 24/7 y SLA de Cadena de Frío</h1>
+            <p class="text-xs text-[#94add1] mt-1">Monitoreo de roturas críticas de frío con reloj regresivo SLA menor a 120 minutos</p>
           </div>
-          <button id="btn-trigger-emergency" class="touch-target px-3.5 py-2 rounded-lg bg-[#e11d48] hover:bg-[#be123c] text-white text-xs font-bold shadow transition flex items-center gap-1.5">
-            <span>🚨</span> <span>Despachar Nueva Alerta</span>
+          <button type="button" id="btn-trigger-emergency" class="touch-target px-4 py-2 rounded-lg bg-[#be123c] hover:bg-[#9f1239] text-white text-xs font-bold transition flex items-center gap-1.5 self-start sm:self-auto">
+            <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0zM12 9v4M12 17h.01"/>
+            </svg>
+            <span>Despachar Nueva Alerta</span>
           </button>
         </div>
 
         <!-- Critical Guidance Banner -->
-        <div class="bg-[#29131a] border border-[#541f2d] rounded-xl p-4 text-xs text-[#fecdd3] space-y-2">
-          <div class="flex items-center gap-2 font-bold text-[#fb7185]">
-            <span>⚠️ Protocolo de Pérdida de Cadena de Frío (SLA Infranqueable)</span>
-          </div>
-          <p class="leading-relaxed text-[#fca5a5]">
-            Las cámaras de congelados de carne (-18°C) y vacunas farmacéuticas no pueden superar los límites térmicos por más de 120 minutos. Toda intervención despachada debe ser confirmada in-situ por el técnico antes del vencimiento del SLA para evitar penalidades contractuales.
+        <div class="print-surface bg-[#29131a] border border-[#541f2d] rounded-xl p-4 text-xs text-[#fecdd3] space-y-2">
+          <h2 class="text-base font-bold text-[#fda4af] flex items-center gap-2">
+            <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>
+            </svg>
+            <span>Protocolo de Pérdida de Cadena de Frío (SLA Estricto)</span>
+          </h2>
+          <p class="leading-relaxed text-[#fecdd3]">
+            Las cámaras de congelados (-18 °C) y vacunas farmacéuticas no deben superar los límites térmicos por más de 120 minutos. Toda intervención despachada debe confirmarse in-situ con mediciones reales y firma ePOD antes del vencimiento del SLA.
           </p>
         </div>
 
@@ -217,80 +254,85 @@
       </section>
 
       <!-- TAB: THERMODYNAMICS & GASES -->
-      <section id="tab-thermodynamics" class="tab-content hidden space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-l-4 border-[#38bdf8] pl-3">
-          <div>
-            <h2 class="text-2xl font-black text-[#f0f6ff] tracking-tight">Calculador Termodinámico & Tabla Presión-Temperatura (P-T)</h2>
-            <p class="text-xs text-[#8ca4c8]">Diagnóstico en tiempo real de Recalentamiento Útil (Superheat) y Subenfriamiento (Subcooling)</p>
-          </div>
+      <section id="tab-thermodynamics" role="tabpanel" aria-labelledby="desk-tab-thermodynamics" class="tab-content hidden bg-[#080f1d] p-4 sm:p-6 pb-24 sm:pb-6 space-y-6">
+        <div>
+          <h1 class="text-[1.75rem] leading-[2.15rem] font-extrabold text-[#f0f6ff] tracking-tight">Calculador Termodinámico y Tabla P-T</h1>
+          <p class="text-xs text-[#94add1] mt-1">Diagnóstico de Recalentamiento Útil (Superheat) y Subenfriamiento (Subcooling)</p>
         </div>
 
         <!-- Thermodynamic Calculator Card: Single Level Flat Panel -->
-        <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl p-5 space-y-5">
+        <div class="print-surface bg-[#0f1b30] border border-[#1e3256] rounded-xl p-5 space-y-5">
           <div class="flex flex-wrap items-center justify-between border-b border-[#1e3256] pb-3 gap-3">
-            <div class="flex items-center gap-3">
-              <span class="text-[#38bdf8] font-bold text-sm">🌡️ Parámetros de Circuito Frigorífico</span>
-              <select id="calc-gas-type" class="bg-[#091224] border border-[#1e3256] rounded px-3 py-1.5 text-xs text-white font-semibold">
-                <option value="R404A" selected>R-404A (Congelados / Baja Temp)</option>
-                <option value="R410A">R-410A (VRF / Inverter / Climatización)</option>
-                <option value="R134a">R-134a (Media Temp / Chillers)</option>
-                <option value="R22">R-22 (Legacy Transición)</option>
-              </select>
+            <div class="flex flex-wrap items-center gap-3">
+              <h2 class="text-base font-bold text-[#f0f6ff] flex items-center gap-2">
+                <svg aria-hidden="true" class="w-4 h-4 text-[#38bdf8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/>
+                </svg>
+                <span>Parámetros de Circuito Frigorífico</span>
+              </h2>
+              <div class="flex items-center gap-2">
+                <label for="calc-gas-type" class="text-xs text-[#c5d7ed] font-medium">Refrigerante:</label>
+                <select id="calc-gas-type" class="touch-target bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-semibold">
+                  <option value="R404A" selected>R-404A (Congelados / Baja Temp)</option>
+                  <option value="R410A">R-410A (VRF / Inverter / Climatización)</option>
+                  <option value="R134a">R-134a (Media Temp / Chillers)</option>
+                  <option value="R22">R-22 (Legacy Transición)</option>
+                </select>
+              </div>
             </div>
-            <span id="calc-pt-summary" class="text-xs font-mono px-2.5 py-1 rounded bg-[#091224] text-[#8ca4c8] border border-[#1e3256]">
-              T. Evap Sat: -°C | T. Cond Sat: -°C
+            <span id="calc-pt-summary" class="text-xs font-mono tabular-nums px-2.5 py-1 rounded bg-[#091224] text-[#c5d7ed]">
+              T. Evap Sat: - °C | T. Cond Sat: - °C
             </span>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="flex flex-col gap-1">
-              <label class="text-xs text-[#8ca4c8] block font-medium">Presión de Succión (Baja PSI)</label>
-              <input type="number" step="0.5" id="inp-suction-psi" value="28" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white text-center font-bold">
+            <div class="flex flex-col gap-1.5">
+              <label for="inp-suction-psi" class="text-xs text-[#c5d7ed] font-medium">Presión de Succión (Baja PSI)</label>
+              <input type="number" step="0.5" min="0" max="650" id="inp-suction-psi" value="28" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-sm text-white text-center font-mono font-bold tabular-nums">
             </div>
-            <div class="flex flex-col gap-1">
-              <label class="text-xs text-[#8ca4c8] block font-medium">Temp. Línea Succión (°C)</label>
-              <input type="number" step="0.5" id="inp-suction-temp" value="-28" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white text-center font-bold">
+            <div class="flex flex-col gap-1.5">
+              <label for="inp-suction-temp" class="text-xs text-[#c5d7ed] font-medium">Temp. Línea Succión (°C)</label>
+              <input type="number" step="0.5" min="-80" max="120" id="inp-suction-temp" value="-28" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-sm text-white text-center font-mono font-bold tabular-nums">
             </div>
-            <div class="flex flex-col gap-1">
-              <label class="text-xs text-[#8ca4c8] block font-medium">Presión de Descarga (Alta PSI)</label>
-              <input type="number" step="0.5" id="inp-discharge-psi" value="240" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white text-center font-bold">
+            <div class="flex flex-col gap-1.5">
+              <label for="inp-discharge-psi" class="text-xs text-[#c5d7ed] font-medium">Presión de Descarga (Alta PSI)</label>
+              <input type="number" step="0.5" min="0" max="650" id="inp-discharge-psi" value="240" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-sm text-white text-center font-mono font-bold tabular-nums">
             </div>
-            <div class="flex flex-col gap-1">
-              <label class="text-xs text-[#8ca4c8] block font-medium">Temp. Línea Líquido (°C)</label>
-              <input type="number" step="0.5" id="inp-liquid-temp" value="36" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white text-center font-bold">
+            <div class="flex flex-col gap-1.5">
+              <label for="inp-liquid-temp" class="text-xs text-[#c5d7ed] font-medium">Temp. Línea Líquido (°C)</label>
+              <input type="number" step="0.5" min="-40" max="120" id="inp-liquid-temp" value="36" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-sm text-white text-center font-mono font-bold tabular-nums">
             </div>
           </div>
 
-          <!-- Result Diagnostic Display -->
-          <div class="border-t border-[#1e3256] pt-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div class="flex items-center gap-6">
-              <div>
-                <span class="text-[11px] text-[#8ca4c8] uppercase tracking-wider block font-bold">Recalentamiento (Superheat)</span>
-                <span id="disp-superheat-val" class="text-xl font-black text-[#38bdf8] font-mono">0.0 °C</span>
-                <span id="disp-superheat-status" class="text-xs block text-[#718ab0]">Rango Seguro (4 a 9°C)</span>
-              </div>
-              <div class="border-l border-[#1e3256] pl-6">
-                <span class="text-[11px] text-[#8ca4c8] uppercase tracking-wider block font-bold">Subenfriamiento (Subcooling)</span>
-                <span id="disp-subcooling-val" class="text-xl font-black text-[#60a5fa] font-mono">0.0 °C</span>
-                <span id="disp-subcooling-status" class="text-xs block text-[#718ab0]">Rango Seguro (4 a 9°C)</span>
-              </div>
-            </div>
+          <div id="calc-error-banner" role="alert" class="hidden border-t border-[#541f2d] pt-3 text-xs text-[#fda4af] font-medium">
+            <!-- Inline calculator validation message -->
+          </div>
 
-            <div id="disp-diagnosis-box" class="p-3 border-l-2 border-[#38bdf8] text-xs md:max-w-md">
-              <div class="font-bold text-white mb-0.5" id="disp-diagnosis-title">Diagnóstico: Evaluando...</div>
-              <p class="text-[#8ca4c8] text-[11px]" id="disp-diagnosis-desc">Modifique los valores para ver la acción sugerida.</p>
+          <!-- Result Diagnostic Display (Flat, no nested card borders or side-tabs) -->
+          <div class="border-t border-[#1e3256] pt-4 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+            <div>
+              <span class="text-xs text-[#94add1] uppercase tracking-wider block font-bold">Recalentamiento (Superheat)</span>
+              <span id="disp-superheat-val" class="text-2xl font-extrabold text-[#38bdf8] font-mono tabular-nums mt-1 block">0.0 °C</span>
+              <span id="disp-superheat-status" class="text-xs block text-[#c5d7ed] mt-1">Rango Seguro (4 a 9 °C)</span>
+            </div>
+            <div>
+              <span class="text-xs text-[#94add1] uppercase tracking-wider block font-bold">Subenfriamiento (Subcooling)</span>
+              <span id="disp-subcooling-val" class="text-2xl font-extrabold text-[#60a5fa] font-mono tabular-nums mt-1 block">0.0 °C</span>
+              <span id="disp-subcooling-status" class="text-xs block text-[#c5d7ed] mt-1">Rango Seguro (4 a 9 °C)</span>
+            </div>
+            <div id="disp-diagnosis-box" class="text-xs space-y-1">
+              <h3 class="text-sm font-bold text-[#f0f6ff]" id="disp-diagnosis-title">Diagnóstico: Evaluando</h3>
+              <p class="text-[#c5d7ed] text-xs leading-relaxed" id="disp-diagnosis-desc">Modifique los valores para ver la acción sugerida.</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- TAB: COMPRESSOR & ASSETS HEALTH -->
-      <section id="tab-assets" class="tab-content hidden space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-l-4 border-[#34d399] pl-3">
-          <div>
-            <h2 class="text-2xl font-black text-[#f0f6ff] tracking-tight">Salud Predictiva de Compresores & Respaldo Eléctrico</h2>
-            <p class="text-xs text-[#8ca4c8]">Asset Health Scoring (0 a 100), pruebas de acidez de aceite y grupos electrógenos</p>
-          </div>
+      <section id="tab-assets" role="tabpanel" aria-labelledby="desk-tab-assets" class="tab-content hidden bg-[#080f1d] p-4 sm:p-6 pb-24 sm:pb-6 space-y-6">
+        <div>
+          <h1 class="text-[1.75rem] leading-[2.15rem] font-extrabold text-[#f0f6ff] tracking-tight">Salud Predictiva de Compresores y Respaldo Eléctrico</h1>
+          <p class="text-xs text-[#94add1] mt-1">Asset Health Scoring (0 a 100), pruebas de acidez de aceite y grupos electrógenos</p>
         </div>
 
         <div id="assets-cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -299,14 +341,17 @@
       </section>
 
       <!-- TAB: DUAL-CURRENCY CONTRACTS -->
-      <section id="tab-contracts" class="tab-content hidden space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-l-4 border-[#60a5fa] pl-3">
+      <section id="tab-contracts" role="tabpanel" aria-labelledby="desk-tab-contracts" class="tab-content hidden bg-[#080f1d] p-4 sm:p-6 pb-24 sm:pb-6 space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <h2 class="text-2xl font-black text-[#f0f6ff] tracking-tight">Abonos Bimonetarios de Mantenimiento (ARS / USD)</h2>
-            <p class="text-xs text-[#8ca4c8]">Gestión de cuotas de mano de obra en pesos y fondo de repuestos importados en dólares</p>
+            <h1 class="text-[1.75rem] leading-[2.15rem] font-extrabold text-[#f0f6ff] tracking-tight">Abonos Bimonetarios de Mantenimiento (ARS / USD)</h1>
+            <p class="text-xs text-[#94add1] mt-1">Gestión de cuotas de mano de obra en pesos y fondo de repuestos importados en dólares</p>
           </div>
-          <button id="btn-new-contract-modal" class="touch-target px-3.5 py-2 rounded-lg bg-[#0284c7] hover:bg-[#0369a1] text-white text-xs font-bold shadow transition flex items-center gap-1.5">
-            <span>+</span> <span>Nuevo Abono Bimonetario</span>
+          <button type="button" id="btn-new-contract-modal" class="touch-target px-4 py-2 rounded-lg bg-[#0369a1] hover:bg-[#075985] text-white text-xs font-bold transition flex items-center gap-1.5 self-start sm:self-auto">
+            <svg aria-hidden="true" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+            <span>Nuevo Abono Bimonetario</span>
           </button>
         </div>
 
@@ -317,52 +362,352 @@
     </main>
   </div>
 
-  <!-- MODAL: NUEVA GUARDIA 24/7 -->
-  <div id="modal-new-emergency" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
-    <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl w-full max-w-lg p-6 space-y-4 shadow-2xl">
+  <!-- MODAL 1: NUEVA GUARDIA 24/7 -->
+  <div id="modal-new-emergency" role="dialog" aria-modal="true" aria-labelledby="modal-emergency-title" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 hidden overflow-y-auto">
+    <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl w-full max-w-lg p-6 space-y-4 shadow-2xl my-auto">
       <div class="flex items-center justify-between border-b border-[#1e3256] pb-3">
-        <h3 class="text-base font-bold text-white">Despacho Inmediato de Guardia 24/7</h3>
-        <button id="btn-close-emergency-modal" class="text-[#8ca4c8] hover:text-white text-xl font-bold">✕</button>
+        <h2 id="modal-emergency-title" class="text-base font-bold text-[#f0f6ff]">Despacho Inmediato de Guardia 24/7</h2>
+        <button type="button" id="btn-close-emergency-modal" aria-label="Cerrar modal de guardia" class="touch-target flex items-center justify-center rounded-lg text-[#c5d7ed] hover:text-white hover:bg-[#14233c] transition">
+          <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
       </div>
-      <form id="form-create-emergency" class="space-y-3">
+      <form id="form-create-emergency" class="space-y-3" novalidate>
+        <div id="err-emergency-form" role="alert" class="hidden text-xs text-[#fda4af] bg-[#29131a] border border-[#541f2d] rounded-lg px-3 py-2"></div>
         <div>
-          <label class="text-xs text-[#8ca4c8] block mb-1">Planta / Establecimiento</label>
-          <input type="text" id="inp-emg-facility" required placeholder="Ej: Frigorífico Regional Sur" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white">
+          <label for="inp-emg-facility" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Planta / Establecimiento</label>
+          <input type="text" id="inp-emg-facility" required placeholder="Ej: Frigorífico Regional Sur" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
         </div>
         <div>
-          <label class="text-xs text-[#8ca4c8] block mb-1">Dirección Exacta</label>
-          <input type="text" id="inp-emg-address" required placeholder="Ruta 2 Km 45, Parque Industrial" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white">
+          <label for="inp-emg-address" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Dirección Exacta</label>
+          <input type="text" id="inp-emg-address" required placeholder="Ruta 2 Km 45, Parque Industrial" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
         </div>
-        <div class="grid grid-cols-2 gap-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <label class="text-xs text-[#8ca4c8] block mb-1">Cámara / Equipo Afectado</label>
-            <input type="text" id="inp-emg-chamber" required placeholder="Cámara 3 Congelados (-18°C)" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white">
+            <label for="inp-emg-chamber" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Cámara / Equipo Afectado</label>
+            <input type="text" id="inp-emg-chamber" required placeholder="CAM-CARNE-03" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono">
           </div>
           <div>
-            <label class="text-xs text-[#8ca4c8] block mb-1">Severidad de Cadena de Frío</label>
-            <select id="inp-emg-severity" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white">
-              <option value="CRITICAL_PERISHABLE">Rotura Crítica (SLA &lt; 120m)</option>
-              <option value="ALARM_HIGH_TEMP">Alarma de Temperatura Alta</option>
-              <option value="SOLAR_BACKUP_FAIL">Falla de Inversor / Generador</option>
+            <label for="inp-emg-severity" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Severidad de Cadena de Frío</label>
+            <select id="inp-emg-severity" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
+              <option value="CRITICA_ROTURA_FRIO">Rotura Crítica de Frío (SLA &lt; 120m)</option>
+              <option value="ALTA_VRF_CONFORT">Climatización VRF / Servidores (SLA &lt; 240m)</option>
+              <option value="MEDIA_PREVENTIVO">Mantenimiento Preventivo (SLA 24h)</option>
             </select>
           </div>
         </div>
-        <div>
-          <label class="text-xs text-[#8ca4c8] block mb-1">Teléfono de Contacto (WhatsApp)</label>
-          <input type="text" id="inp-emg-phone" required placeholder="+5491144447777" class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white font-mono">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="inp-emg-target-temp" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Temp. Consigna Objetivo (°C)</label>
+            <input type="number" step="0.5" id="inp-emg-target-temp" required value="-18" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-emg-current-temp" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Temp. Actual Medida (°C)</label>
+            <input type="number" step="0.5" id="inp-emg-current-temp" required value="-4" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
         </div>
         <div>
-          <label class="text-xs text-[#8ca4c8] block mb-1">Síntoma Técnico Reportado</label>
-          <textarea id="inp-emg-desc" rows="2" required placeholder="Compresor no arranca por presostato de baja, escarcha excesiva..." class="w-full bg-[#091224] border border-[#233a63] rounded px-3 py-2 text-xs text-white"></textarea>
+          <label for="inp-emg-phone" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Teléfono de Contacto (WhatsApp E.164)</label>
+          <input type="tel" id="inp-emg-phone" required placeholder="+5491144447777" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono">
         </div>
-        <div class="pt-3 flex justify-end gap-2 border-t border-[#1e3256]">
-          <button type="button" id="btn-cancel-emergency" class="px-4 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#c5d7ed] text-xs font-medium">Cancelar</button>
-          <button type="submit" class="px-4 py-2 rounded-lg bg-[#e11d48] hover:bg-[#be123c] text-white text-xs font-bold shadow">Despachar Cuadrilla de Urgencia</button>
+        <div>
+          <label for="inp-emg-desc" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Síntoma Técnico Reportado</label>
+          <textarea id="inp-emg-desc" rows="2" required placeholder="Compresor no arranca por presostato de baja, escarcha excesiva..." class="w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white"></textarea>
+        </div>
+        <div class="pt-3 flex flex-wrap justify-end gap-2 border-t border-[#1e3256]">
+          <button type="button" id="btn-cancel-emergency" class="touch-target px-4 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#d6e4f7] text-xs font-medium">Cancelar</button>
+          <button type="submit" class="touch-target px-4 py-2 rounded-lg bg-[#be123c] hover:bg-[#9f1239] text-white text-xs font-bold">Despachar Cuadrilla de Urgencia</button>
         </div>
       </form>
     </div>
   </div>
 
-  <script type="module" src="src/main.js"></script>
+  <!-- MODAL 2: NUEVA ORDEN DE SERVICIO -->
+  <div id="modal-new-order" role="dialog" aria-modal="true" aria-labelledby="modal-order-title" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 hidden overflow-y-auto">
+    <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl w-full max-w-xl p-6 space-y-4 shadow-2xl my-auto">
+      <div class="flex items-center justify-between border-b border-[#1e3256] pb-3">
+        <h2 id="modal-order-title" class="text-base font-bold text-[#f0f6ff]">Nueva Orden de Servicio Técnico</h2>
+        <button type="button" id="btn-close-order-modal" aria-label="Cerrar modal de orden" class="touch-target flex items-center justify-center rounded-lg text-[#c5d7ed] hover:text-white hover:bg-[#14233c] transition">
+          <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <form id="form-create-order" class="space-y-3" novalidate>
+        <div id="err-order-form" role="alert" class="hidden text-xs text-[#fda4af] bg-[#29131a] border border-[#541f2d] rounded-lg px-3 py-2"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="inp-ord-customer" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Cliente / Razón Social</label>
+            <input type="text" id="inp-ord-customer" required placeholder="Ej: Frigorífico Sur S.A." class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
+          </div>
+          <div>
+            <label for="inp-ord-facility" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Planta / Establecimiento</label>
+            <input type="text" id="inp-ord-facility" required placeholder="Ej: Planta Desposte Norte" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="inp-ord-equip" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Tag de Equipo</label>
+            <input type="text" id="inp-ord-equip" required placeholder="CAM-04" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono">
+          </div>
+          <div>
+            <label for="inp-ord-gas" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Gas Refrigerante</label>
+            <select id="inp-ord-gas" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
+              <option value="R404A">R-404A</option>
+              <option value="R410A">R-410A</option>
+              <option value="R134a">R-134a</option>
+              <option value="R22">R-22</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div>
+            <label for="inp-ord-suction-psi" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Succión (PSI)</label>
+            <input type="number" step="0.5" min="0" max="650" id="inp-ord-suction-psi" required value="28" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-ord-suction-temp" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Temp. Succión (°C)</label>
+            <input type="number" step="0.5" id="inp-ord-suction-temp" required value="-28" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-ord-discharge-psi" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Descarga (PSI)</label>
+            <input type="number" step="0.5" min="0" max="650" id="inp-ord-discharge-psi" required value="240" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div>
+            <label for="inp-ord-liquid-temp" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Temp. Líquido (°C)</label>
+            <input type="number" step="0.5" id="inp-ord-liquid-temp" required value="36" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-ord-amps" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Corriente (A)</label>
+            <input type="number" step="0.1" min="0" id="inp-ord-amps" required value="18.0" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-ord-gas-kg" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Gas Cargado (kg)</label>
+            <input type="number" step="0.1" min="0" id="inp-ord-gas-kg" required value="2.0" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div>
+            <label for="inp-ord-labor-ars" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Mano de Obra (ARS)</label>
+            <input type="number" step="100" min="0" id="inp-ord-labor-ars" required value="95000" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-ord-parts-usd" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Repuestos (USD)</label>
+            <input type="number" step="1" min="0" id="inp-ord-parts-usd" required value="100" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-ord-rate" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Cotización USD/ARS</label>
+            <input type="number" step="1" min="1" id="inp-ord-rate" required value="1250" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+        </div>
+        <div class="pt-3 flex flex-wrap justify-end gap-2 border-t border-[#1e3256]">
+          <button type="button" id="btn-cancel-order" class="touch-target px-4 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#d6e4f7] text-xs font-medium">Cancelar</button>
+          <button type="submit" class="touch-target px-4 py-2 rounded-lg bg-[#0369a1] hover:bg-[#075985] text-white text-xs font-bold">Registrar Orden de Servicio</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 3: CIERRE Y SELLADO ePOD DE GUARDIA -->
+  <div id="modal-resolve-emergency" role="dialog" aria-modal="true" aria-labelledby="modal-resolve-title" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 hidden overflow-y-auto">
+    <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl w-full max-w-xl p-6 space-y-4 shadow-2xl my-auto">
+      <div class="flex items-center justify-between border-b border-[#1e3256] pb-3">
+        <h2 id="modal-resolve-title" class="text-base font-bold text-[#f0f6ff]">Confirmar Llegada, Mediciones y Cierre ePOD</h2>
+        <button type="button" id="btn-close-resolve-modal" aria-label="Cerrar modal de cierre ePOD" class="touch-target flex items-center justify-center rounded-lg text-[#c5d7ed] hover:text-white hover:bg-[#14233c] transition">
+          <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <p id="resolve-ticket-summary" class="text-xs text-[#c5d7ed] font-mono"></p>
+      <form id="form-resolve-emergency" class="space-y-3" novalidate>
+        <input type="hidden" id="inp-resolve-ticket-id">
+        <div id="err-resolve-form" role="alert" class="hidden text-xs text-[#fda4af] bg-[#29131a] border border-[#541f2d] rounded-lg px-3 py-2"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div>
+            <label for="inp-res-gas" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Gas Refrigerante</label>
+            <select id="inp-res-gas" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
+              <option value="R404A">R-404A</option>
+              <option value="R410A">R-410A</option>
+              <option value="R134a">R-134a</option>
+              <option value="R22">R-22</option>
+            </select>
+          </div>
+          <div>
+            <label for="inp-res-suction-psi" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Succión Medida (PSI)</label>
+            <input type="number" step="0.5" min="0" max="650" id="inp-res-suction-psi" required value="28" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-res-suction-temp" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Temp. Succión (°C)</label>
+            <input type="number" step="0.5" id="inp-res-suction-temp" required value="-28" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div>
+            <label for="inp-res-discharge-psi" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Descarga (PSI)</label>
+            <input type="number" step="0.5" min="0" max="650" id="inp-res-discharge-psi" required value="240" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-res-liquid-temp" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Temp. Líquido (°C)</label>
+            <input type="number" step="0.5" id="inp-res-liquid-temp" required value="36" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-res-gas-kg" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Gas Cargado (kg)</label>
+            <input type="number" step="0.1" min="0" id="inp-res-gas-kg" required value="1.5" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div>
+            <label for="inp-res-amps" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Corriente Motor (A)</label>
+            <input type="number" step="0.1" min="0" id="inp-res-amps" required value="18.2" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-res-labor-ars" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Mano de Obra (ARS)</label>
+            <input type="number" step="100" min="0" id="inp-res-labor-ars" required value="110000" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-res-parts-usd" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Repuestos (USD)</label>
+            <input type="number" step="1" min="0" id="inp-res-parts-usd" required value="80" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+        </div>
+        <div class="border-t border-[#1e3256] pt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="inp-res-tech-name" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Nombre del Técnico Frigorista</label>
+            <input type="text" id="inp-res-tech-name" required placeholder="Ej: Marcelo Díaz" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
+          </div>
+          <div>
+            <label for="inp-res-tech-sig" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Matrícula / Código Firma Técnico</label>
+            <input type="text" id="inp-res-tech-sig" required placeholder="Ej: MAT-CACAAV-704" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono">
+          </div>
+          <div>
+            <label for="inp-res-supervisor-name" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Responsable de Planta (Cliente)</label>
+            <input type="text" id="inp-res-supervisor-name" required placeholder="Ej: Ing. Carlos Gómez" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
+          </div>
+          <div>
+            <label for="inp-res-client-sig" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Conformidad / Legajo Cliente</label>
+            <input type="text" id="inp-res-client-sig" required placeholder="Ej: CONF-DNI-28441902" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono">
+          </div>
+        </div>
+        <div class="pt-3 flex flex-wrap justify-end gap-2 border-t border-[#1e3256]">
+          <button type="button" id="btn-cancel-resolve" class="touch-target px-4 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#d6e4f7] text-xs font-medium">Cancelar</button>
+          <button type="submit" class="touch-target px-4 py-2 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold">Sellar Parte Técnico (SHA-256)</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 4: NUEVO ABONO BIMONETARIO -->
+  <div id="modal-new-contract" role="dialog" aria-modal="true" aria-labelledby="modal-contract-title" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 hidden overflow-y-auto">
+    <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl w-full max-w-lg p-6 space-y-4 shadow-2xl my-auto">
+      <div class="flex items-center justify-between border-b border-[#1e3256] pb-3">
+        <h2 id="modal-contract-title" class="text-base font-bold text-[#f0f6ff]">Nuevo Abono Bimonetario (ARS / USD)</h2>
+        <button type="button" id="btn-close-contract-modal" aria-label="Cerrar modal de abono" class="touch-target flex items-center justify-center rounded-lg text-[#c5d7ed] hover:text-white hover:bg-[#14233c] transition">
+          <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <form id="form-create-contract" class="space-y-3" novalidate>
+        <div id="err-contract-form" role="alert" class="hidden text-xs text-[#fda4af] bg-[#29131a] border border-[#541f2d] rounded-lg px-3 py-2"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="inp-ctr-customer" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Razón Social del Cliente</label>
+            <input type="text" id="inp-ctr-customer" required placeholder="Ej: Lácteos del Litoral S.A." class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
+          </div>
+          <div>
+            <label for="inp-ctr-facility" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Planta o Edificio</label>
+            <input type="text" id="inp-ctr-facility" required placeholder="Ej: Centro Logístico Rosario" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
+          </div>
+        </div>
+        <div>
+          <label for="inp-ctr-equipment" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Equipos Cubiertos (separados por coma)</label>
+          <input type="text" id="inp-ctr-equipment" required placeholder="CAM-01, CHILLER-02, GEN-01" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div>
+            <label for="inp-ctr-fee-ars" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Abono Mensual (ARS)</label>
+            <input type="number" step="1000" min="0" id="inp-ctr-fee-ars" required value="380000" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-ctr-parts-usd" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Fondo Repuestos (USD)</label>
+            <input type="number" step="50" min="0" id="inp-ctr-parts-usd" required value="800" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+          <div>
+            <label for="inp-ctr-rate" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Tipo Cambio (ARS)</label>
+            <input type="number" step="1" min="1" id="inp-ctr-rate" required value="1250" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono tabular-nums">
+          </div>
+        </div>
+        <div>
+          <label for="inp-ctr-sla" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Nivel de SLA Comprometido</label>
+          <select id="inp-ctr-sla" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white">
+            <option value="CRITICA_ROTURA_FRIO">Crítica Rotura de Frío (&lt; 120m)</option>
+            <option value="ALTA_VRF_CONFORT">Alta VRF / Datacenter (&lt; 240m)</option>
+            <option value="MEDIA_PREVENTIVO">Preventivo Programado (24h)</option>
+          </select>
+        </div>
+        <div class="pt-3 flex flex-wrap justify-end gap-2 border-t border-[#1e3256]">
+          <button type="button" id="btn-cancel-contract" class="touch-target px-4 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#d6e4f7] text-xs font-medium">Cancelar</button>
+          <button type="submit" class="touch-target px-4 py-2 rounded-lg bg-[#0369a1] hover:bg-[#075985] text-white text-xs font-bold">Crear Abono Bimonetario</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 5: DESPACHO WHATSAPP -->
+  <div id="modal-whatsapp-dispatch" role="dialog" aria-modal="true" aria-labelledby="modal-wa-title" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 hidden overflow-y-auto">
+    <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl w-full max-w-md p-6 space-y-4 shadow-2xl my-auto">
+      <div class="flex items-center justify-between border-b border-[#1e3256] pb-3">
+        <h2 id="modal-wa-title" class="text-base font-bold text-[#f0f6ff]">Confirmar Aviso por WhatsApp</h2>
+        <button type="button" id="btn-close-wa-modal" aria-label="Cerrar modal de WhatsApp" class="touch-target flex items-center justify-center rounded-lg text-[#c5d7ed] hover:text-white hover:bg-[#14233c] transition">
+          <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <p id="wa-ticket-summary" class="text-xs text-[#c5d7ed]"></p>
+      <form id="form-whatsapp-dispatch" class="space-y-3" novalidate>
+        <input type="hidden" id="inp-wa-ticket-id">
+        <div id="err-wa-form" role="alert" class="hidden text-xs text-[#fda4af] bg-[#29131a] border border-[#541f2d] rounded-lg px-3 py-2"></div>
+        <div>
+          <label for="inp-wa-phone" class="text-xs text-[#c5d7ed] block mb-1 font-medium">Teléfono del Técnico / Guardia (E.164)</label>
+          <input type="tel" id="inp-wa-phone" required placeholder="+5493415000000" class="touch-target w-full bg-[#091224] border border-[#233a63] rounded-lg px-3 py-2 text-xs text-white font-mono">
+        </div>
+        <div class="pt-3 flex flex-wrap justify-end gap-2 border-t border-[#1e3256]">
+          <button type="button" id="btn-cancel-wa" class="touch-target px-4 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#d6e4f7] text-xs font-medium">Cancelar</button>
+          <button type="submit" class="touch-target px-4 py-2 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold">Abrir WhatsApp</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 6: CONFIRMAR PURGA DEMO -->
+  <div id="modal-confirm-purge" role="dialog" aria-modal="true" aria-labelledby="modal-purge-title" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 hidden overflow-y-auto">
+    <div class="bg-[#0f1b30] border border-[#1e3256] rounded-xl w-full max-w-md p-6 space-y-4 shadow-2xl my-auto">
+      <div class="flex items-center justify-between border-b border-[#1e3256] pb-3">
+        <h2 id="modal-purge-title" class="text-base font-bold text-[#f0f6ff]">Purgar Registros de Demostración</h2>
+        <button type="button" id="btn-close-purge-modal" aria-label="Cerrar confirmación de purga" class="touch-target flex items-center justify-center rounded-lg text-[#c5d7ed] hover:text-white hover:bg-[#14233c] transition">
+          <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <p class="text-xs text-[#c5d7ed] leading-relaxed">
+        Esta acción eliminará todos los registros marcados como [DEMO] de la vista y de la caché local, y activará el bloqueo anti-resiembra para que no vuelvan a generarse automáticamente al recargar. Los registros reales creados por usted se conservarán.
+      </p>
+      <div class="pt-3 flex flex-wrap justify-end gap-2 border-t border-[#1e3256]">
+        <button type="button" id="btn-cancel-purge" class="touch-target px-4 py-2 rounded-lg bg-[#14233c] hover:bg-[#1a2f52] text-[#d6e4f7] text-xs font-medium">Cancelar</button>
+        <button type="button" id="btn-confirm-purge" class="touch-target px-4 py-2 rounded-lg bg-[#be123c] hover:bg-[#9f1239] text-white text-xs font-bold">Purgar Datos Demo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast / Status Notifications -->
+  <div id="toast-region" aria-live="polite" aria-atomic="true" class="no-print fixed bottom-20 sm:bottom-5 right-4 z-50 flex flex-col gap-2 max-w-sm pointer-events-none"></div>
+
+  <script type="module" src="./src/sw-register.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>

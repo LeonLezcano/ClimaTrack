@@ -4,15 +4,114 @@
   "graph": {},
   "nodes": [
     {
+      "label": "manifest.json",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "manifest",
+      "community": 5,
+      "norm_label": "manifest.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "manifest_name",
+      "community": 5,
+      "norm_label": "name"
+    },
+    {
+      "label": "short_name",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "manifest_short_name",
+      "community": 5,
+      "norm_label": "short_name"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "manifest_description",
+      "community": 5,
+      "norm_label": "description"
+    },
+    {
+      "label": "start_url",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "manifest_start_url",
+      "community": 5,
+      "norm_label": "start_url"
+    },
+    {
+      "label": "display",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "manifest_display",
+      "community": 5,
+      "norm_label": "display"
+    },
+    {
+      "label": "background_color",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "manifest_background_color",
+      "community": 5,
+      "norm_label": "background_color"
+    },
+    {
+      "label": "theme_color",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "manifest_theme_color",
+      "community": 5,
+      "norm_label": "theme_color"
+    },
+    {
+      "label": "orientation",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "manifest_orientation",
+      "community": 5,
+      "norm_label": "orientation"
+    },
+    {
+      "label": "icons",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "manifest_icons",
+      "community": 5,
+      "norm_label": "icons"
+    },
+    {
       "label": "package.json",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "package.json",
       "id": "package",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "package.json"
     },
     {
       "label": "name",
@@ -20,10 +119,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "name",
       "id": "package_name",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "name"
     },
     {
       "label": "version",
@@ -31,10 +129,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "version",
       "id": "package_version",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "version"
     },
     {
       "label": "description",
@@ -42,10 +139,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "description",
       "id": "package_description",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "description"
     },
     {
       "label": "type",
@@ -53,10 +149,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "type",
       "id": "package_type",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "type"
     },
     {
       "label": "main",
@@ -64,10 +159,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "main",
       "id": "package_main",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "main"
     },
     {
       "label": "scripts",
@@ -75,10 +169,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "scripts",
       "id": "package_scripts",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "scripts"
     },
     {
       "label": "test",
@@ -86,10 +179,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "test",
       "id": "package_scripts_test",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "test"
     },
     {
       "label": "security:full",
@@ -97,10 +189,9 @@
       "source_file": "package.json",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "security:full",
       "id": "package_scripts_security_full",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "security:full"
     },
     {
       "label": "version:bump",
@@ -108,10 +199,9 @@
       "source_file": "package.json",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "version:bump",
       "id": "package_scripts_version_bump",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "version:bump"
     },
     {
       "label": "keywords",
@@ -119,10 +209,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "keywords",
       "id": "package_keywords",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "keywords"
     },
     {
       "label": "hvac",
@@ -130,10 +219,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "hvac",
       "id": "ref_hvac",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "hvac"
     },
     {
       "label": "frio-industrial",
@@ -141,10 +229,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "frio-industrial",
       "id": "ref_frio_industrial",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "frio-industrial"
     },
     {
       "label": "refrigeracion",
@@ -152,10 +239,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "refrigeracion",
       "id": "ref_refrigeracion",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "refrigeracion"
     },
     {
       "label": "superheat",
@@ -163,10 +249,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "superheat",
       "id": "ref_superheat",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "superheat"
     },
     {
       "label": "subcooling",
@@ -174,10 +259,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "subcooling",
       "id": "ref_subcooling",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "subcooling"
     },
     {
       "label": "r410a",
@@ -185,10 +269,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "r410a",
       "id": "ref_r410a",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "r410a"
     },
     {
       "label": "r134a",
@@ -196,10 +279,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "r134a",
       "id": "ref_r134a",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "r134a"
     },
     {
       "label": "r404a",
@@ -207,10 +289,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "r404a",
       "id": "ref_r404a",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "r404a"
     },
     {
       "label": "energia-solar",
@@ -218,10 +299,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "energia-solar",
       "id": "ref_energia_solar",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "energia-solar"
     },
     {
       "label": "grupos-electrogenos",
@@ -229,10 +309,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "grupos-electrogenos",
       "id": "ref_grupos_electrogenos",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "grupos-electrogenos"
     },
     {
       "label": "epod",
@@ -240,10 +319,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "epod",
       "id": "ref_epod",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "epod"
     },
     {
       "label": "sha256",
@@ -251,10 +329,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
-      "norm_label": "sha256",
       "id": "ref_sha256",
-      "community_name": "Community 2"
+      "community": 2,
+      "norm_label": "sha256"
     },
     {
       "label": "author",
@@ -262,10 +339,9 @@
       "source_file": "package.json",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "author",
       "id": "package_author",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "author"
     },
     {
       "label": "license",
@@ -273,10 +349,9 @@
       "source_file": "package.json",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "license",
       "id": "package_license",
-      "community_name": "Community 3"
+      "community": 2,
+      "norm_label": "license"
     },
     {
       "label": "compressorHealthScoring.js",
@@ -284,10 +359,9 @@
       "source_file": "src/core/compressorHealthScoring.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
-      "norm_label": "compressorhealthscoring.js",
       "id": "src_core_compressorhealthscoring",
-      "community_name": "Community 8"
+      "community": 1,
+      "norm_label": "compressorhealthscoring.js"
     },
     {
       "label": "CompressorHealthScoring",
@@ -295,10 +369,9 @@
       "source_file": "src/core/compressorHealthScoring.js",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 8,
-      "norm_label": "compressorhealthscoring",
       "id": "src_core_compressorhealthscoring_compressorhealthscoring",
-      "community_name": "Community 8"
+      "community": 1,
+      "norm_label": "compressorhealthscoring"
     },
     {
       "label": ".evaluateCompressorHealth()",
@@ -306,10 +379,9 @@
       "source_file": "src/core/compressorHealthScoring.js",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 8,
-      "norm_label": ".evaluatecompressorhealth()",
       "id": "src_core_compressorhealthscoring_compressorhealthscoring_evaluatecompressorhealth",
-      "community_name": "Community 8"
+      "community": 1,
+      "norm_label": ".evaluatecompressorhealth()"
     },
     {
       "label": ".evaluateBackupPower()",
@@ -317,10 +389,9 @@
       "source_file": "src/core/compressorHealthScoring.js",
       "source_location": "L97",
       "_origin": "ast",
-      "community": 8,
-      "norm_label": ".evaluatebackuppower()",
       "id": "src_core_compressorhealthscoring_compressorhealthscoring_evaluatebackuppower",
-      "community_name": "Community 8"
+      "community": 1,
+      "norm_label": ".evaluatebackuppower()"
     },
     {
       "label": "gasRefrigerantEngine.js",
@@ -328,10 +399,9 @@
       "source_file": "src/core/gasRefrigerantEngine.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "gasrefrigerantengine.js",
       "id": "src_core_gasrefrigerantengine",
-      "community_name": "Community 1"
+      "community": 1,
+      "norm_label": "gasrefrigerantengine.js"
     },
     {
       "label": "REFRIGERANT_CATALOG",
@@ -339,10 +409,9 @@
       "source_file": "src/core/gasRefrigerantEngine.js",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "refrigerant_catalog",
       "id": "src_core_gasrefrigerantengine_refrigerant_catalog",
-      "community_name": "Community 1"
+      "community": 1,
+      "norm_label": "refrigerant_catalog"
     },
     {
       "label": "GasRefrigerantEngine",
@@ -350,10 +419,9 @@
       "source_file": "src/core/gasRefrigerantEngine.js",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": "gasrefrigerantengine",
       "id": "src_core_gasrefrigerantengine_gasrefrigerantengine",
-      "community_name": "Community 5"
+      "community": 3,
+      "norm_label": "gasrefrigerantengine"
     },
     {
       "label": ".getSaturationTemperature()",
@@ -361,10 +429,9 @@
       "source_file": "src/core/gasRefrigerantEngine.js",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": ".getsaturationtemperature()",
       "id": "src_core_gasrefrigerantengine_gasrefrigerantengine_getsaturationtemperature",
-      "community_name": "Community 5"
+      "community": 3,
+      "norm_label": ".getsaturationtemperature()"
     },
     {
       "label": ".calculateSuperheat()",
@@ -372,10 +439,9 @@
       "source_file": "src/core/gasRefrigerantEngine.js",
       "source_location": "L52",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": ".calculatesuperheat()",
       "id": "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatesuperheat",
-      "community_name": "Community 5"
+      "community": 3,
+      "norm_label": ".calculatesuperheat()"
     },
     {
       "label": ".calculateSubcooling()",
@@ -383,10 +449,9 @@
       "source_file": "src/core/gasRefrigerantEngine.js",
       "source_location": "L82",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": ".calculatesubcooling()",
       "id": "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatesubcooling",
-      "community_name": "Community 5"
+      "community": 3,
+      "norm_label": ".calculatesubcooling()"
     },
     {
       "label": ".diagnoseCircuit()",
@@ -394,10 +459,9 @@
       "source_file": "src/core/gasRefrigerantEngine.js",
       "source_location": "L111",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": ".diagnosecircuit()",
       "id": "src_core_gasrefrigerantengine_gasrefrigerantengine_diagnosecircuit",
-      "community_name": "Community 5"
+      "community": 3,
+      "norm_label": ".diagnosecircuit()"
     },
     {
       "label": ".calculateCylinderBalance()",
@@ -405,10 +469,9 @@
       "source_file": "src/core/gasRefrigerantEngine.js",
       "source_location": "L157",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": ".calculatecylinderbalance()",
       "id": "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatecylinderbalance",
-      "community_name": "Community 5"
+      "community": 3,
+      "norm_label": ".calculatecylinderbalance()"
     },
     {
       "label": "slaEmergencyDispatcher.js",
@@ -416,10 +479,9 @@
       "source_file": "src/core/slaEmergencyDispatcher.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 9,
-      "norm_label": "slaemergencydispatcher.js",
       "id": "src_core_slaemergencydispatcher",
-      "community_name": "Community 9"
+      "community": 1,
+      "norm_label": "slaemergencydispatcher.js"
     },
     {
       "label": "SLA_TIERS",
@@ -427,10 +489,9 @@
       "source_file": "src/core/slaEmergencyDispatcher.js",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 9,
-      "norm_label": "sla_tiers",
       "id": "src_core_slaemergencydispatcher_sla_tiers",
-      "community_name": "Community 9"
+      "community": 1,
+      "norm_label": "sla_tiers"
     },
     {
       "label": "SlaEmergencyDispatcher",
@@ -438,10 +499,9 @@
       "source_file": "src/core/slaEmergencyDispatcher.js",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 9,
-      "norm_label": "slaemergencydispatcher",
       "id": "src_core_slaemergencydispatcher_slaemergencydispatcher",
-      "community_name": "Community 9"
+      "community": 1,
+      "norm_label": "slaemergencydispatcher"
     },
     {
       "label": ".createDispatchTicket()",
@@ -449,10 +509,9 @@
       "source_file": "src/core/slaEmergencyDispatcher.js",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 9,
-      "norm_label": ".createdispatchticket()",
       "id": "src_core_slaemergencydispatcher_slaemergencydispatcher_createdispatchticket",
-      "community_name": "Community 9"
+      "community": 0,
+      "norm_label": ".createdispatchticket()"
     },
     {
       "label": ".evaluateSlaStatus()",
@@ -460,10 +519,9 @@
       "source_file": "src/core/slaEmergencyDispatcher.js",
       "source_location": "L78",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".evaluateslastatus()",
       "id": "src_core_slaemergencydispatcher_slaemergencydispatcher_evaluateslastatus",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".evaluateslastatus()"
     },
     {
       "label": "main.js",
@@ -471,219 +529,319 @@
       "source_file": "src/main.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "main.js",
       "id": "src_main",
-      "community_name": "Community 7"
+      "community": 1,
+      "norm_label": "main.js"
     },
     {
       "label": "ClimaTrackApp",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L17",
+      "source_location": "L23",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "climatrackapp",
       "id": "src_main_climatrackapp",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": "climatrackapp"
     },
     {
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L18",
+      "source_location": "L24",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".constructor()",
       "id": "src_main_climatrackapp_constructor",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".constructor()"
     },
     {
       "label": ".init()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L27",
+      "source_location": "L34",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".init()",
       "id": "src_main_climatrackapp_init",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".init()"
+    },
+    {
+      "label": ".loadOrSeedData()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_loadorseeddata",
+      "community": 4,
+      "norm_label": ".loadorseeddata()"
     },
     {
       "label": ".seedInitialDemoData()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L35",
+      "source_location": "L67",
       "_origin": "ast",
-      "community": 8,
-      "norm_label": ".seedinitialdemodata()",
       "id": "src_main_climatrackapp_seedinitialdemodata",
-      "community_name": "Community 8"
+      "community": 1,
+      "norm_label": ".seedinitialdemodata()"
+    },
+    {
+      "label": ".persistAll()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L191",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_persistall",
+      "community": 4,
+      "norm_label": ".persistall()"
+    },
+    {
+      "label": ".initNetworkMonitor()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L198",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_initnetworkmonitor",
+      "community": 0,
+      "norm_label": ".initnetworkmonitor()"
+    },
+    {
+      "label": ".syncVersionLabel()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L225",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_syncversionlabel",
+      "community": 0,
+      "norm_label": ".syncversionlabel()"
     },
     {
       "label": ".bindEvents()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L154",
+      "source_location": "L240",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".bindevents()",
       "id": "src_main_climatrackapp_bindevents",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".bindevents()"
+    },
+    {
+      "label": ".openModal()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L340",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_openmodal",
+      "community": 0,
+      "norm_label": ".openmodal()"
+    },
+    {
+      "label": ".closeModal()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L354",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_closemodal",
+      "community": 0,
+      "norm_label": ".closemodal()"
+    },
+    {
+      "label": ".setFormError()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L364",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_setformerror",
+      "community": 0,
+      "norm_label": ".setformerror()"
+    },
+    {
+      "label": ".showToast()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L376",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_showtoast",
+      "community": 0,
+      "norm_label": ".showtoast()"
     },
     {
       "label": ".switchTab()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L255",
+      "source_location": "L394",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".switchtab()",
       "id": "src_main_climatrackapp_switchtab",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".switchtab()"
     },
     {
       "label": ".startLiveSlaTimer()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L280",
+      "source_location": "L420",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".startliveslatimer()",
       "id": "src_main_climatrackapp_startliveslatimer",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".startliveslatimer()"
     },
     {
       "label": ".updateThermodynamicsCalculator()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L287",
+      "source_location": "L427",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": ".updatethermodynamicscalculator()",
       "id": "src_main_climatrackapp_updatethermodynamicscalculator",
-      "community_name": "Community 5"
-    },
-    {
-      "label": ".openEmergencyModal()",
-      "file_type": "code",
-      "source_file": "src/main.js",
-      "source_location": "L335",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": ".openemergencymodal()",
-      "id": "src_main_climatrackapp_openemergencymodal",
-      "community_name": "Community 0"
-    },
-    {
-      "label": ".closeEmergencyModal()",
-      "file_type": "code",
-      "source_file": "src/main.js",
-      "source_location": "L339",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": ".closeemergencymodal()",
-      "id": "src_main_climatrackapp_closeemergencymodal",
-      "community_name": "Community 0"
+      "community": 3,
+      "norm_label": ".updatethermodynamicscalculator()"
     },
     {
       "label": ".handleCreateEmergency()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L343",
+      "source_location": "L510",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".handlecreateemergency()",
       "id": "src_main_climatrackapp_handlecreateemergency",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".handlecreateemergency()"
+    },
+    {
+      "label": ".handleCreateOrder()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L563",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_handlecreateorder",
+      "community": 0,
+      "norm_label": ".handlecreateorder()"
+    },
+    {
+      "label": ".openResolveModal()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L615",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_openresolvemodal",
+      "community": 0,
+      "norm_label": ".openresolvemodal()"
+    },
+    {
+      "label": ".handleResolveEmergencySubmit()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L627",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_handleresolveemergencysubmit",
+      "community": 3,
+      "norm_label": ".handleresolveemergencysubmit()"
+    },
+    {
+      "label": ".openWhatsAppModal()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L698",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_openwhatsappmodal",
+      "community": 0,
+      "norm_label": ".openwhatsappmodal()"
+    },
+    {
+      "label": ".handleWhatsAppSubmit()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L712",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_handlewhatsappsubmit",
+      "community": 0,
+      "norm_label": ".handlewhatsappsubmit()"
+    },
+    {
+      "label": ".handleCreateContract()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L741",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_handlecreatecontract",
+      "community": 0,
+      "norm_label": ".handlecreatecontract()"
+    },
+    {
+      "label": ".handlePurgeDemo()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L784",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_handlepurgedemo",
+      "community": 0,
+      "norm_label": ".handlepurgedemo()"
     },
     {
       "label": ".renderAll()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L365",
+      "source_location": "L800",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".renderall()",
       "id": "src_main_climatrackapp_renderall",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".renderall()"
+    },
+    {
+      "label": ".updatePurgeButtonVisibility()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L809",
+      "_origin": "ast",
+      "id": "src_main_climatrackapp_updatepurgebuttonvisibility",
+      "community": 0,
+      "norm_label": ".updatepurgebuttonvisibility()"
     },
     {
       "label": ".renderMetrics()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L373",
+      "source_location": "L820",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".rendermetrics()",
       "id": "src_main_climatrackapp_rendermetrics",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".rendermetrics()"
     },
     {
       "label": ".renderDashboardTable()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L397",
+      "source_location": "L844",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".renderdashboardtable()",
       "id": "src_main_climatrackapp_renderdashboardtable",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".renderdashboardtable()"
     },
     {
       "label": ".renderEmergencyCards()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L426",
+      "source_location": "L882",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".renderemergencycards()",
       "id": "src_main_climatrackapp_renderemergencycards",
-      "community_name": "Community 0"
-    },
-    {
-      "label": ".handleResolveEmergency()",
-      "file_type": "code",
-      "source_file": "src/main.js",
-      "source_location": "L527",
-      "_origin": "ast",
       "community": 0,
-      "norm_label": ".handleresolveemergency()",
-      "id": "src_main_climatrackapp_handleresolveemergency",
-      "community_name": "Community 0"
-    },
-    {
-      "label": ".handleWhatsAppDispatch()",
-      "file_type": "code",
-      "source_file": "src/main.js",
-      "source_location": "L562",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": ".handlewhatsappdispatch()",
-      "id": "src_main_climatrackapp_handlewhatsappdispatch",
-      "community_name": "Community 0"
+      "norm_label": ".renderemergencycards()"
     },
     {
       "label": ".renderAssetCards()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L579",
+      "source_location": "L986",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".renderassetcards()",
       "id": "src_main_climatrackapp_renderassetcards",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".renderassetcards()"
     },
     {
       "label": ".renderContractCards()",
       "file_type": "code",
       "source_file": "src/main.js",
-      "source_location": "L634",
+      "source_location": "L1065",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": ".rendercontractcards()",
       "id": "src_main_climatrackapp_rendercontractcards",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": ".rendercontractcards()"
     },
     {
       "label": "climaTrackCache.service.js",
@@ -691,120 +849,179 @@
       "source_file": "src/services/climaTrackCache.service.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": "climatrackcache.service.js",
       "id": "src_services_climatrackcache_service",
-      "community_name": "Community 4"
+      "community": 4,
+      "norm_label": "climatrackcache.service.js"
     },
     {
       "label": "memoryStore",
       "file_type": "code",
       "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": "memorystore",
       "id": "src_services_climatrackcache_service_memorystore",
-      "community_name": "Community 4"
+      "community": 4,
+      "norm_label": "memorystore"
     },
     {
       "label": "getStorageItem()",
       "file_type": "code",
       "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L13",
+      "source_location": "L14",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": "getstorageitem()",
       "id": "src_services_climatrackcache_service_getstorageitem",
-      "community_name": "Community 4"
+      "community": 4,
+      "norm_label": "getstorageitem()"
     },
     {
       "label": "setStorageItem()",
       "file_type": "code",
       "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": "setstorageitem()",
       "id": "src_services_climatrackcache_service_setstorageitem",
-      "community_name": "Community 4"
+      "community": 4,
+      "norm_label": "setstorageitem()"
     },
     {
       "label": "removeStorageItem()",
       "file_type": "code",
       "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L28",
+      "source_location": "L29",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": "removestorageitem()",
       "id": "src_services_climatrackcache_service_removestorageitem",
-      "community_name": "Community 4"
+      "community": 4,
+      "norm_label": "removestorageitem()"
+    },
+    {
+      "label": "safeReadArray()",
+      "file_type": "code",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "src_services_climatrackcache_service_safereadarray",
+      "community": 4,
+      "norm_label": "safereadarray()"
     },
     {
       "label": "ClimaTrackCacheService",
       "file_type": "code",
       "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L36",
+      "source_location": "L48",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": "climatrackcacheservice",
       "id": "src_services_climatrackcache_service_climatrackcacheservice",
-      "community_name": "Community 4"
+      "community": 4,
+      "norm_label": "climatrackcacheservice"
     },
     {
       "label": ".isPurged()",
       "file_type": "code",
       "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L37",
+      "source_location": "L49",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": ".ispurged()",
       "id": "src_services_climatrackcache_service_climatrackcacheservice_ispurged",
-      "community_name": "Community 4"
+      "community": 4,
+      "norm_label": ".ispurged()"
     },
     {
       "label": ".purgeData()",
       "file_type": "code",
       "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L41",
+      "source_location": "L53",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": ".purgedata()",
       "id": "src_services_climatrackcache_service_climatrackcacheservice_purgedata",
-      "community_name": "Community 4"
+      "community": 4,
+      "norm_label": ".purgedata()"
     },
     {
       "label": ".resetPurgeForTesting()",
       "file_type": "code",
       "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L48",
+      "source_location": "L61",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": ".resetpurgefortesting()",
       "id": "src_services_climatrackcache_service_climatrackcacheservice_resetpurgefortesting",
-      "community_name": "Community 4"
+      "community": 4,
+      "norm_label": ".resetpurgefortesting()"
     },
     {
       "label": ".saveOrders()",
       "file_type": "code",
       "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L60",
+      "source_location": "L73",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": ".saveorders()",
       "id": "src_services_climatrackcache_service_climatrackcacheservice_saveorders",
-      "community_name": "Community 4"
+      "community": 4,
+      "norm_label": ".saveorders()"
     },
     {
       "label": ".getOrders()",
       "file_type": "code",
       "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L64",
+      "source_location": "L77",
       "_origin": "ast",
-      "community": 4,
-      "norm_label": ".getorders()",
       "id": "src_services_climatrackcache_service_climatrackcacheservice_getorders",
-      "community_name": "Community 4"
+      "community": 4,
+      "norm_label": ".getorders()"
+    },
+    {
+      "label": ".saveTickets()",
+      "file_type": "code",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "src_services_climatrackcache_service_climatrackcacheservice_savetickets",
+      "community": 4,
+      "norm_label": ".savetickets()"
+    },
+    {
+      "label": ".getTickets()",
+      "file_type": "code",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "src_services_climatrackcache_service_climatrackcacheservice_gettickets",
+      "community": 4,
+      "norm_label": ".gettickets()"
+    },
+    {
+      "label": ".saveContracts()",
+      "file_type": "code",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "src_services_climatrackcache_service_climatrackcacheservice_savecontracts",
+      "community": 4,
+      "norm_label": ".savecontracts()"
+    },
+    {
+      "label": ".getContracts()",
+      "file_type": "code",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "src_services_climatrackcache_service_climatrackcacheservice_getcontracts",
+      "community": 4,
+      "norm_label": ".getcontracts()"
+    },
+    {
+      "label": ".saveAssets()",
+      "file_type": "code",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "src_services_climatrackcache_service_climatrackcacheservice_saveassets",
+      "community": 4,
+      "norm_label": ".saveassets()"
+    },
+    {
+      "label": ".getAssets()",
+      "file_type": "code",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "src_services_climatrackcache_service_climatrackcacheservice_getassets",
+      "community": 4,
+      "norm_label": ".getassets()"
     },
     {
       "label": "dualCurrencyContractService.js",
@@ -812,10 +1029,9 @@
       "source_file": "src/services/dualCurrencyContractService.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "dualcurrencycontractservice.js",
       "id": "src_services_dualcurrencycontractservice",
-      "community_name": "Community 10"
+      "community": 1,
+      "norm_label": "dualcurrencycontractservice.js"
     },
     {
       "label": "DualCurrencyContractService",
@@ -823,10 +1039,9 @@
       "source_file": "src/services/dualCurrencyContractService.js",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "dualcurrencycontractservice",
       "id": "src_services_dualcurrencycontractservice_dualcurrencycontractservice",
-      "community_name": "Community 10"
+      "community": 1,
+      "norm_label": "dualcurrencycontractservice"
     },
     {
       "label": ".createContract()",
@@ -834,21 +1049,19 @@
       "source_file": "src/services/dualCurrencyContractService.js",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": ".createcontract()",
       "id": "src_services_dualcurrencycontractservice_dualcurrencycontractservice_createcontract",
-      "community_name": "Community 10"
+      "community": 1,
+      "norm_label": ".createcontract()"
     },
     {
       "label": ".evaluateDunning()",
       "file_type": "code",
       "source_file": "src/services/dualCurrencyContractService.js",
-      "source_location": "L52",
+      "source_location": "L58",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": ".evaluatedunning()",
       "id": "src_services_dualcurrencycontractservice_dualcurrencycontractservice_evaluatedunning",
-      "community_name": "Community 10"
+      "community": 1,
+      "norm_label": ".evaluatedunning()"
     },
     {
       "label": "exportService.js",
@@ -856,10 +1069,9 @@
       "source_file": "src/services/exportService.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
-      "norm_label": "exportservice.js",
       "id": "src_services_exportservice",
-      "community_name": "Community 11"
+      "community": 0,
+      "norm_label": "exportservice.js"
     },
     {
       "label": "ExportService",
@@ -867,10 +1079,9 @@
       "source_file": "src/services/exportService.js",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 11,
-      "norm_label": "exportservice",
       "id": "src_services_exportservice_exportservice",
-      "community_name": "Community 11"
+      "community": 0,
+      "norm_label": "exportservice"
     },
     {
       "label": ".generateOrdersCsv()",
@@ -878,10 +1089,9 @@
       "source_file": "src/services/exportService.js",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 11,
-      "norm_label": ".generateorderscsv()",
       "id": "src_services_exportservice_exportservice_generateorderscsv",
-      "community_name": "Community 11"
+      "community": 0,
+      "norm_label": ".generateorderscsv()"
     },
     {
       "label": ".downloadCsv()",
@@ -889,10 +1099,9 @@
       "source_file": "src/services/exportService.js",
       "source_location": "L52",
       "_origin": "ast",
-      "community": 11,
-      "norm_label": ".downloadcsv()",
       "id": "src_services_exportservice_exportservice_downloadcsv",
-      "community_name": "Community 11"
+      "community": 0,
+      "norm_label": ".downloadcsv()"
     },
     {
       "label": "serviceOrderService.js",
@@ -900,10 +1109,9 @@
       "source_file": "src/services/serviceOrderService.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "serviceorderservice.js",
       "id": "src_services_serviceorderservice",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": "serviceorderservice.js"
     },
     {
       "label": "ServiceOrderService",
@@ -911,10 +1119,9 @@
       "source_file": "src/services/serviceOrderService.js",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "serviceorderservice",
       "id": "src_services_serviceorderservice_serviceorderservice",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": "serviceorderservice"
     },
     {
       "label": ".createOrder()",
@@ -922,10 +1129,9 @@
       "source_file": "src/services/serviceOrderService.js",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 5,
-      "norm_label": ".createorder()",
       "id": "src_services_serviceorderservice_serviceorderservice_createorder",
-      "community_name": "Community 5"
+      "community": 3,
+      "norm_label": ".createorder()"
     },
     {
       "label": ".sealOrder()",
@@ -933,10 +1139,9 @@
       "source_file": "src/services/serviceOrderService.js",
       "source_location": "L100",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": ".sealorder()",
       "id": "src_services_serviceorderservice_serviceorderservice_sealorder",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": ".sealorder()"
     },
     {
       "label": ".verifySeal()",
@@ -944,10 +1149,9 @@
       "source_file": "src/services/serviceOrderService.js",
       "source_location": "L144",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": ".verifyseal()",
       "id": "src_services_serviceorderservice_serviceorderservice_verifyseal",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": ".verifyseal()"
     },
     {
       "label": "whatsAppClimaNotifier.service.js",
@@ -955,10 +1159,9 @@
       "source_file": "src/services/whatsAppClimaNotifier.service.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "whatsappclimanotifier.service.js",
       "id": "src_services_whatsappclimanotifier_service",
-      "community_name": "Community 7"
+      "community": 1,
+      "norm_label": "whatsappclimanotifier.service.js"
     },
     {
       "label": "WhatsAppClimaNotifierService",
@@ -966,10 +1169,9 @@
       "source_file": "src/services/whatsAppClimaNotifier.service.js",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "whatsappclimanotifierservice",
       "id": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice",
-      "community_name": "Community 7"
+      "community": 1,
+      "norm_label": "whatsappclimanotifierservice"
     },
     {
       "label": ".notifyEmergencyDispatch()",
@@ -977,10 +1179,9 @@
       "source_file": "src/services/whatsAppClimaNotifier.service.js",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": ".notifyemergencydispatch()",
       "id": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice_notifyemergencydispatch",
-      "community_name": "Community 7"
+      "community": 1,
+      "norm_label": ".notifyemergencydispatch()"
     },
     {
       "label": ".notifyOrderCompletion()",
@@ -988,10 +1189,19 @@
       "source_file": "src/services/whatsAppClimaNotifier.service.js",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": ".notifyordercompletion()",
       "id": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice_notifyordercompletion",
-      "community_name": "Community 7"
+      "community": 1,
+      "norm_label": ".notifyordercompletion()"
+    },
+    {
+      "label": "sw-register.js",
+      "file_type": "code",
+      "source_file": "src/sw-register.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_sw_register",
+      "community": 8,
+      "norm_label": "sw-register.js"
     },
     {
       "label": "cryptoSeal.js",
@@ -999,10 +1209,9 @@
       "source_file": "src/utils/cryptoSeal.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "cryptoseal.js",
       "id": "src_utils_cryptoseal",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": "cryptoseal.js"
     },
     {
       "label": "toUtf8BinaryString()",
@@ -1010,10 +1219,9 @@
       "source_file": "src/utils/cryptoSeal.js",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "toutf8binarystring()",
       "id": "src_utils_cryptoseal_toutf8binarystring",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": "toutf8binarystring()"
     },
     {
       "label": "deepSort()",
@@ -1021,10 +1229,9 @@
       "source_file": "src/utils/cryptoSeal.js",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "deepsort()",
       "id": "src_utils_cryptoseal_deepsort",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": "deepsort()"
     },
     {
       "label": "K_CONSTANTS",
@@ -1032,10 +1239,9 @@
       "source_file": "src/utils/cryptoSeal.js",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "k_constants",
       "id": "src_utils_cryptoseal_k_constants",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": "k_constants"
     },
     {
       "label": "CryptoSeal",
@@ -1043,10 +1249,9 @@
       "source_file": "src/utils/cryptoSeal.js",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": "cryptoseal",
       "id": "src_utils_cryptoseal_cryptoseal",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": "cryptoseal"
     },
     {
       "label": ".sha256()",
@@ -1054,10 +1259,9 @@
       "source_file": "src/utils/cryptoSeal.js",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": ".sha256()",
       "id": "src_utils_cryptoseal_cryptoseal_sha256",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": ".sha256()"
     },
     {
       "label": ".generate()",
@@ -1065,10 +1269,9 @@
       "source_file": "src/utils/cryptoSeal.js",
       "source_location": "L126",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": ".generate()",
       "id": "src_utils_cryptoseal_cryptoseal_generate",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": ".generate()"
     },
     {
       "label": ".verify()",
@@ -1076,10 +1279,9 @@
       "source_file": "src/utils/cryptoSeal.js",
       "source_location": "L132",
       "_origin": "ast",
-      "community": 1,
-      "norm_label": ".verify()",
       "id": "src_utils_cryptoseal_cryptoseal_verify",
-      "community_name": "Community 1"
+      "community": 3,
+      "norm_label": ".verify()"
     },
     {
       "label": "formatters.js",
@@ -1087,10 +1289,9 @@
       "source_file": "src/utils/formatters.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 6,
-      "norm_label": "formatters.js",
       "id": "src_utils_formatters",
-      "community_name": "Community 6"
+      "community": 1,
+      "norm_label": "formatters.js"
     },
     {
       "label": "Formatters",
@@ -1098,10 +1299,9 @@
       "source_file": "src/utils/formatters.js",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "formatters",
       "id": "src_utils_formatters_formatters",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": "formatters"
     },
     {
       "label": "sanitizer.js",
@@ -1109,10 +1309,9 @@
       "source_file": "src/utils/sanitizer.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
-      "norm_label": "sanitizer.js",
       "id": "src_utils_sanitizer",
-      "community_name": "Community 7"
+      "community": 1,
+      "norm_label": "sanitizer.js"
     },
     {
       "label": "Sanitizer",
@@ -1120,10 +1319,39 @@
       "source_file": "src/utils/sanitizer.js",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 0,
-      "norm_label": "sanitizer",
       "id": "src_utils_sanitizer_sanitizer",
-      "community_name": "Community 0"
+      "community": 0,
+      "norm_label": "sanitizer"
+    },
+    {
+      "label": "sw.js",
+      "file_type": "code",
+      "source_file": "sw.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "sw",
+      "community": 6,
+      "norm_label": "sw.js"
+    },
+    {
+      "label": "STATIC_ASSETS",
+      "file_type": "code",
+      "source_file": "sw.js",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "sw_static_assets",
+      "community": 6,
+      "norm_label": "static_assets"
+    },
+    {
+      "label": "tailwind.config.cjs",
+      "file_type": "code",
+      "source_file": "tailwind.config.cjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tailwind_config",
+      "community": 9,
+      "norm_label": "tailwind.config.cjs"
     },
     {
       "label": "run_tests.js",
@@ -1131,10 +1359,9 @@
       "source_file": "tests/run_tests.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 6,
-      "norm_label": "run_tests.js",
       "id": "tests_run_tests",
-      "community_name": "Community 6"
+      "community": 1,
+      "norm_label": "run_tests.js"
     },
     {
       "label": "it()",
@@ -1142,10 +1369,9 @@
       "source_file": "tests/run_tests.js",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 6,
-      "norm_label": "it()",
       "id": "tests_run_tests_it",
-      "community_name": "Community 6"
+      "community": 1,
+      "norm_label": "it()"
     },
     {
       "label": "sampleOrder",
@@ -1153,10 +1379,9 @@
       "source_file": "tests/run_tests.js",
       "source_location": "L189",
       "_origin": "ast",
-      "community": 6,
-      "norm_label": "sampleorder",
       "id": "tests_run_tests_sampleorder",
-      "community_name": "Community 6"
+      "community": 1,
+      "norm_label": "sampleorder"
     },
     {
       "label": "sealedOrder",
@@ -1164,10 +1389,9 @@
       "source_file": "tests/run_tests.js",
       "source_location": "L226",
       "_origin": "ast",
-      "community": 6,
-      "norm_label": "sealedorder",
       "id": "tests_run_tests_sealedorder",
-      "community_name": "Community 6"
+      "community": 1,
+      "norm_label": "sealedorder"
     },
     {
       "label": "contractSample",
@@ -1175,10 +1399,9 @@
       "source_file": "tests/run_tests.js",
       "source_location": "L254",
       "_origin": "ast",
-      "community": 6,
-      "norm_label": "contractsample",
       "id": "tests_run_tests_contractsample",
-      "community_name": "Community 6"
+      "community": 1,
+      "norm_label": "contractsample"
     },
     {
       "label": "emergencyTicket",
@@ -1186,10 +1409,9 @@
       "source_file": "tests/run_tests.js",
       "source_location": "L429",
       "_origin": "ast",
-      "community": 6,
-      "norm_label": "emergencyticket",
       "id": "tests_run_tests_emergencyticket",
-      "community_name": "Community 6"
+      "community": 1,
+      "norm_label": "emergencyticket"
     },
     {
       "label": "WhatsAppClimaNotifier",
@@ -1197,13 +1419,111 @@
       "source_file": "src/services/whatsAppClimaNotifier.service.js",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 12,
-      "norm_label": "whatsappclimanotifier",
       "id": "src_services_whatsappclimanotifier_service_whatsappclimanotifier",
-      "community_name": "Community 12"
+      "community": 7,
+      "norm_label": "whatsappclimanotifier"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "manifest.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "manifest",
+      "target": "manifest_background_color",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "manifest.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "manifest",
+      "target": "manifest_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "manifest.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "manifest",
+      "target": "manifest_display",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "manifest.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "manifest",
+      "target": "manifest_icons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "manifest.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "manifest",
+      "target": "manifest_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "manifest.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "manifest",
+      "target": "manifest_orientation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "manifest.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "manifest",
+      "target": "manifest_short_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "manifest.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "manifest",
+      "target": "manifest_start_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "manifest.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "manifest",
+      "target": "manifest_theme_color",
+      "confidence_score": 1.0
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -1211,9 +1531,9 @@
       "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_author"
+      "target": "package_author",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1222,9 +1542,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_description"
+      "target": "package_description",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1233,9 +1553,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_keywords"
+      "target": "package_keywords",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1244,9 +1564,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_license"
+      "target": "package_license",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1255,9 +1575,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_main"
+      "target": "package_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1266,9 +1586,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_name"
+      "target": "package_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1277,9 +1597,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_scripts"
+      "target": "package_scripts",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1288,9 +1608,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_type"
+      "target": "package_type",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1299,9 +1619,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_version"
+      "target": "package_version",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1310,9 +1630,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_security_full"
+      "target": "package_scripts_security_full",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1321,9 +1641,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_test"
+      "target": "package_scripts_test",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1332,9 +1652,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_version_bump"
+      "target": "package_scripts_version_bump",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1344,9 +1664,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_energia_solar"
+      "target": "ref_energia_solar",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1356,9 +1676,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_epod"
+      "target": "ref_epod",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1368,9 +1688,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_frio_industrial"
+      "target": "ref_frio_industrial",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1380,9 +1700,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_grupos_electrogenos"
+      "target": "ref_grupos_electrogenos",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1392,9 +1712,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_hvac"
+      "target": "ref_hvac",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1404,9 +1724,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_r134a"
+      "target": "ref_r134a",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1416,9 +1736,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_r404a"
+      "target": "ref_r404a",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1428,9 +1748,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_r410a"
+      "target": "ref_r410a",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1440,9 +1760,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_refrigeracion"
+      "target": "ref_refrigeracion",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1452,9 +1772,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_sha256"
+      "target": "ref_sha256",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1464,9 +1784,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_subcooling"
+      "target": "ref_subcooling",
+      "confidence_score": 1.0
     },
     {
       "relation": "extends",
@@ -1476,9 +1796,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "package_keywords",
-      "target": "ref_superheat"
+      "target": "ref_superheat",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1487,9 +1807,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_compressorhealthscoring",
-      "target": "src_core_compressorhealthscoring_compressorhealthscoring"
+      "target": "src_core_compressorhealthscoring_compressorhealthscoring",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -1499,9 +1819,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_core_compressorhealthscoring"
+      "target": "src_core_compressorhealthscoring",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -1511,9 +1831,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_core_compressorhealthscoring"
+      "target": "src_core_compressorhealthscoring",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1522,9 +1842,9 @@
       "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_compressorhealthscoring_compressorhealthscoring",
-      "target": "src_core_compressorhealthscoring_compressorhealthscoring_evaluatebackuppower"
+      "target": "src_core_compressorhealthscoring_compressorhealthscoring_evaluatebackuppower",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1533,9 +1853,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_compressorhealthscoring_compressorhealthscoring",
-      "target": "src_core_compressorhealthscoring_compressorhealthscoring_evaluatecompressorhealth"
+      "target": "src_core_compressorhealthscoring_compressorhealthscoring_evaluatecompressorhealth",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1545,9 +1865,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_core_compressorhealthscoring_compressorhealthscoring"
+      "target": "src_core_compressorhealthscoring_compressorhealthscoring",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1557,9 +1877,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_core_compressorhealthscoring_compressorhealthscoring"
+      "target": "src_core_compressorhealthscoring_compressorhealthscoring",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1567,7 +1887,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L91",
+      "source_location": "L126",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_main_climatrackapp_seedinitialdemodata",
@@ -1579,7 +1899,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L113",
+      "source_location": "L148",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_main_climatrackapp_seedinitialdemodata",
@@ -1592,9 +1912,9 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_gasrefrigerantengine",
-      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine"
+      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1603,9 +1923,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_gasrefrigerantengine",
-      "target": "src_core_gasrefrigerantengine_refrigerant_catalog"
+      "target": "src_core_gasrefrigerantengine_refrigerant_catalog",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -1615,9 +1935,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_core_gasrefrigerantengine"
+      "target": "src_core_gasrefrigerantengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -1627,9 +1947,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_serviceorderservice",
-      "target": "src_core_gasrefrigerantengine"
+      "target": "src_core_gasrefrigerantengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -1639,9 +1959,21 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_core_gasrefrigerantengine"
+      "target": "src_core_gasrefrigerantengine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main",
+      "target": "src_core_gasrefrigerantengine_refrigerant_catalog",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1651,9 +1983,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_core_gasrefrigerantengine_refrigerant_catalog"
+      "target": "src_core_gasrefrigerantengine_refrigerant_catalog",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1662,9 +1994,9 @@
       "source_location": "L157",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_gasrefrigerantengine_gasrefrigerantengine",
-      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatecylinderbalance"
+      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatecylinderbalance",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1673,9 +2005,9 @@
       "source_location": "L82",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_gasrefrigerantengine_gasrefrigerantengine",
-      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatesubcooling"
+      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatesubcooling",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1684,9 +2016,9 @@
       "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_gasrefrigerantengine_gasrefrigerantengine",
-      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatesuperheat"
+      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatesuperheat",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1695,9 +2027,9 @@
       "source_location": "L111",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_gasrefrigerantengine_gasrefrigerantengine",
-      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_diagnosecircuit"
+      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_diagnosecircuit",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1706,9 +2038,9 @@
       "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_gasrefrigerantengine_gasrefrigerantengine",
-      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_getsaturationtemperature"
+      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_getsaturationtemperature",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1718,9 +2050,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine"
+      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1730,9 +2062,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_serviceorderservice",
-      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine"
+      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1742,9 +2074,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine"
+      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1754,9 +2086,9 @@
       "source_location": "L83",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatesubcooling",
-      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_getsaturationtemperature"
+      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_getsaturationtemperature",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1766,9 +2098,9 @@
       "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_gasrefrigerantengine_gasrefrigerantengine_calculatesuperheat",
-      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_getsaturationtemperature"
+      "target": "src_core_gasrefrigerantengine_gasrefrigerantengine_getsaturationtemperature",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1776,7 +2108,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L294",
+      "source_location": "L469",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_main_climatrackapp_updatethermodynamicscalculator",
@@ -1800,7 +2132,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L300",
+      "source_location": "L475",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_main_climatrackapp_updatethermodynamicscalculator",
@@ -1824,7 +2156,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L306",
+      "source_location": "L481",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_main_climatrackapp_updatethermodynamicscalculator",
@@ -1849,9 +2181,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_slaemergencydispatcher",
-      "target": "src_core_slaemergencydispatcher_sla_tiers"
+      "target": "src_core_slaemergencydispatcher_sla_tiers",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1860,9 +2192,9 @@
       "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_slaemergencydispatcher",
-      "target": "src_core_slaemergencydispatcher_slaemergencydispatcher"
+      "target": "src_core_slaemergencydispatcher_slaemergencydispatcher",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -1872,9 +2204,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_core_slaemergencydispatcher"
+      "target": "src_core_slaemergencydispatcher",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -1884,9 +2216,21 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_core_slaemergencydispatcher"
+      "target": "src_core_slaemergencydispatcher",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main",
+      "target": "src_core_slaemergencydispatcher_sla_tiers",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1896,9 +2240,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_core_slaemergencydispatcher_sla_tiers"
+      "target": "src_core_slaemergencydispatcher_sla_tiers",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1907,9 +2251,9 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_slaemergencydispatcher_slaemergencydispatcher",
-      "target": "src_core_slaemergencydispatcher_slaemergencydispatcher_createdispatchticket"
+      "target": "src_core_slaemergencydispatcher_slaemergencydispatcher_createdispatchticket",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1918,9 +2262,9 @@
       "source_location": "L78",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_core_slaemergencydispatcher_slaemergencydispatcher",
-      "target": "src_core_slaemergencydispatcher_slaemergencydispatcher_evaluateslastatus"
+      "target": "src_core_slaemergencydispatcher_slaemergencydispatcher_evaluateslastatus",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1930,9 +2274,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_core_slaemergencydispatcher_slaemergencydispatcher"
+      "target": "src_core_slaemergencydispatcher_slaemergencydispatcher",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1942,9 +2286,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_core_slaemergencydispatcher_slaemergencydispatcher"
+      "target": "src_core_slaemergencydispatcher_slaemergencydispatcher",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1952,7 +2296,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L351",
+      "source_location": "L543",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_main_climatrackapp_handlecreateemergency",
@@ -1964,7 +2308,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L42",
+      "source_location": "L73",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_main_climatrackapp_seedinitialdemodata",
@@ -1976,10 +2320,10 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L566",
+      "source_location": "L726",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_handlewhatsappdispatch",
+      "source": "src_main_climatrackapp_handlewhatsappsubmit",
       "target": "src_core_slaemergencydispatcher_slaemergencydispatcher_evaluateslastatus"
     },
     {
@@ -1988,7 +2332,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L436",
+      "source_location": "L895",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_main_climatrackapp_renderemergencycards",
@@ -1998,12 +2342,12 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L17",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_main_climatrackapp"
+      "target": "src_main_climatrackapp",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2013,9 +2357,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_services_climatrackcache_service"
+      "target": "src_services_climatrackcache_service",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -2025,9 +2369,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_services_climatrackcache_service_climatrackcacheservice"
+      "target": "src_services_climatrackcache_service_climatrackcacheservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2037,9 +2381,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_services_dualcurrencycontractservice"
+      "target": "src_services_dualcurrencycontractservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -2049,9 +2393,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice"
+      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2061,9 +2405,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_services_exportservice"
+      "target": "src_services_exportservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -2073,9 +2417,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_services_exportservice_exportservice"
+      "target": "src_services_exportservice_exportservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2085,9 +2429,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_services_serviceorderservice"
+      "target": "src_services_serviceorderservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -2097,9 +2441,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_services_serviceorderservice_serviceorderservice"
+      "target": "src_services_serviceorderservice_serviceorderservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2109,9 +2453,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_services_whatsappclimanotifier_service"
+      "target": "src_services_whatsappclimanotifier_service",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -2121,9 +2465,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice"
+      "target": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2133,9 +2477,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_utils_formatters"
+      "target": "src_utils_formatters",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -2145,9 +2489,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_utils_formatters_formatters"
+      "target": "src_utils_formatters_formatters",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2157,9 +2501,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_utils_sanitizer"
+      "target": "src_utils_sanitizer",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -2169,267 +2513,435 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_utils_sanitizer_sanitizer"
+      "target": "src_utils_sanitizer_sanitizer",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L154",
+      "source_location": "L240",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_bindevents"
+      "target": "src_main_climatrackapp_bindevents",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L339",
+      "source_location": "L354",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_closeemergencymodal"
+      "target": "src_main_climatrackapp_closemodal",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L18",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_constructor"
+      "target": "src_main_climatrackapp_constructor",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L343",
+      "source_location": "L741",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_handlecreateemergency"
+      "target": "src_main_climatrackapp_handlecreatecontract",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L527",
+      "source_location": "L510",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_handleresolveemergency"
+      "target": "src_main_climatrackapp_handlecreateemergency",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L562",
+      "source_location": "L563",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_handlewhatsappdispatch"
+      "target": "src_main_climatrackapp_handlecreateorder",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L27",
+      "source_location": "L784",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_init"
+      "target": "src_main_climatrackapp_handlepurgedemo",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L335",
+      "source_location": "L627",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_openemergencymodal"
+      "target": "src_main_climatrackapp_handleresolveemergencysubmit",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L365",
+      "source_location": "L712",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_renderall"
+      "target": "src_main_climatrackapp_handlewhatsappsubmit",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L579",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_renderassetcards"
+      "target": "src_main_climatrackapp_init",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L634",
+      "source_location": "L198",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_rendercontractcards"
+      "target": "src_main_climatrackapp_initnetworkmonitor",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L397",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_renderdashboardtable"
+      "target": "src_main_climatrackapp_loadorseeddata",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L426",
+      "source_location": "L340",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_renderemergencycards"
+      "target": "src_main_climatrackapp_openmodal",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L373",
+      "source_location": "L615",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_rendermetrics"
+      "target": "src_main_climatrackapp_openresolvemodal",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L698",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_openwhatsappmodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L191",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_persistall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L800",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_renderall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L986",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_renderassetcards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L1065",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_rendercontractcards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L844",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_renderdashboardtable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L882",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_renderemergencycards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L820",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_rendermetrics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_seedinitialdemodata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L364",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_setformerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L376",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_showtoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L420",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_startliveslatimer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L394",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_switchtab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L225",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_syncversionlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L809",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_updatepurgebuttonvisibility",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L427",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp",
+      "target": "src_main_climatrackapp_updatethermodynamicscalculator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_init",
+      "target": "src_main_climatrackapp_bindevents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_init",
+      "target": "src_main_climatrackapp_initnetworkmonitor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_seedinitialdemodata"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L280",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_startliveslatimer"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L255",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_switchtab"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L287",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp",
-      "target": "src_main_climatrackapp_updatethermodynamicscalculator"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L29",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp_init",
-      "target": "src_main_climatrackapp_bindevents"
+      "target": "src_main_climatrackapp_loadorseeddata",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L31",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp_init",
-      "target": "src_main_climatrackapp_renderall"
+      "target": "src_main_climatrackapp_renderall",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L28",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp_init",
-      "target": "src_main_climatrackapp_seedinitialdemodata"
+      "target": "src_main_climatrackapp_startliveslatimer",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L32",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp_init",
-      "target": "src_main_climatrackapp_startliveslatimer"
+      "target": "src_main_climatrackapp_syncversionlabel",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L30",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp_init",
-      "target": "src_main_climatrackapp_updatethermodynamicscalculator"
+      "target": "src_main_climatrackapp_updatethermodynamicscalculator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_loadorseeddata",
+      "target": "src_main_climatrackapp_seedinitialdemodata",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2437,11 +2949,11 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L36",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_seedinitialdemodata",
-      "target": "src_services_climatrackcache_service_climatrackcacheservice_ispurged"
+      "source": "src_main_climatrackapp_loadorseeddata",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_getassets"
     },
     {
       "relation": "calls",
@@ -2449,11 +2961,11 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L127",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_seedinitialdemodata",
-      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice_createcontract"
+      "source": "src_main_climatrackapp_loadorseeddata",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_getcontracts"
     },
     {
       "relation": "calls",
@@ -2461,23 +2973,23 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L69",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_seedinitialdemodata",
-      "target": "src_services_serviceorderservice_serviceorderservice_createorder"
+      "source": "src_main_climatrackapp_loadorseeddata",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_getorders"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L179",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_bindevents",
-      "target": "src_main_climatrackapp_closeemergencymodal"
+      "source": "src_main_climatrackapp_loadorseeddata",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_gettickets"
     },
     {
       "relation": "calls",
@@ -2487,57 +2999,9 @@
       "source_location": "L188",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_bindevents",
-      "target": "src_main_climatrackapp_handlecreateemergency"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L173",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_bindevents",
-      "target": "src_main_climatrackapp_openemergencymodal"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L227",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_bindevents",
-      "target": "src_main_climatrackapp_renderall"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L159",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_bindevents",
-      "target": "src_main_climatrackapp_switchtab"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L167",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_bindevents",
-      "target": "src_main_climatrackapp_updatethermodynamicscalculator"
+      "source": "src_main_climatrackapp_seedinitialdemodata",
+      "target": "src_main_climatrackapp_persistall",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2545,10 +3009,22 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L241",
+      "source_location": "L68",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_bindevents",
+      "source": "src_main_climatrackapp_seedinitialdemodata",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_ispurged"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L161",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_seedinitialdemodata",
       "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice_createcontract"
     },
     {
@@ -2557,7 +3033,283 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L197",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_seedinitialdemodata",
+      "target": "src_services_serviceorderservice_serviceorderservice_createorder"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L777",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreatecontract",
+      "target": "src_main_climatrackapp_persistall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L556",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreateemergency",
+      "target": "src_main_climatrackapp_persistall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L608",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreateorder",
+      "target": "src_main_climatrackapp_persistall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L792",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlepurgedemo",
+      "target": "src_main_climatrackapp_persistall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L691",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handleresolveemergencysubmit",
+      "target": "src_main_climatrackapp_persistall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L724",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlewhatsappsubmit",
+      "target": "src_main_climatrackapp_persistall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L195",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_persistall",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_saveassets"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L194",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_persistall",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_savecontracts"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L192",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_persistall",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_saveorders"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L193",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_persistall",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_savetickets"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L216",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_initnetworkmonitor",
+      "target": "src_main_climatrackapp_showtoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L260",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_bindevents",
+      "target": "src_main_climatrackapp_closemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L300",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_bindevents",
+      "target": "src_main_climatrackapp_handlecreatecontract",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L285",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_bindevents",
+      "target": "src_main_climatrackapp_handlecreateemergency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L290",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_bindevents",
+      "target": "src_main_climatrackapp_handlecreateorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L280",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_bindevents",
+      "target": "src_main_climatrackapp_handlepurgedemo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L295",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_bindevents",
+      "target": "src_main_climatrackapp_handleresolveemergencysubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L305",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_bindevents",
+      "target": "src_main_climatrackapp_handlewhatsappsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L258",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_bindevents",
+      "target": "src_main_climatrackapp_openmodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L311",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_bindevents",
+      "target": "src_main_climatrackapp_showtoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L245",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_bindevents",
+      "target": "src_main_climatrackapp_switchtab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L253",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_bindevents",
+      "target": "src_main_climatrackapp_updatethermodynamicscalculator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L315",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_main_climatrackapp_bindevents",
@@ -2569,7 +3321,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L196",
+      "source_location": "L314",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_main_climatrackapp_bindevents",
@@ -2579,61 +3331,241 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L210",
+      "source_location": "L624",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_bindevents",
-      "target": "src_services_serviceorderservice_serviceorderservice_createorder"
+      "source": "src_main_climatrackapp_openresolvemodal",
+      "target": "src_main_climatrackapp_openmodal",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L277",
+      "source_location": "L709",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
+      "source": "src_main_climatrackapp_openwhatsappmodal",
+      "target": "src_main_climatrackapp_openmodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L779",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreatecontract",
+      "target": "src_main_climatrackapp_closemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L558",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreateemergency",
+      "target": "src_main_climatrackapp_closemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L610",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreateorder",
+      "target": "src_main_climatrackapp_closemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L795",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlepurgedemo",
+      "target": "src_main_climatrackapp_closemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L693",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handleresolveemergencysubmit",
+      "target": "src_main_climatrackapp_closemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L737",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlewhatsappsubmit",
+      "target": "src_main_climatrackapp_closemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L751",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreatecontract",
+      "target": "src_main_climatrackapp_setformerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L524",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreateemergency",
+      "target": "src_main_climatrackapp_setformerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L579",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreateorder",
+      "target": "src_main_climatrackapp_setformerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L631",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handleresolveemergencysubmit",
+      "target": "src_main_climatrackapp_setformerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L719",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlewhatsappsubmit",
+      "target": "src_main_climatrackapp_setformerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L781",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreatecontract",
+      "target": "src_main_climatrackapp_showtoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L560",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreateemergency",
+      "target": "src_main_climatrackapp_showtoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L612",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreateorder",
+      "target": "src_main_climatrackapp_showtoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L797",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlepurgedemo",
+      "target": "src_main_climatrackapp_showtoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L695",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handleresolveemergencysubmit",
+      "target": "src_main_climatrackapp_showtoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L417",
+      "weight": 1.0,
+      "_origin": "ast",
       "source": "src_main_climatrackapp_switchtab",
-      "target": "src_main_climatrackapp_renderall"
+      "target": "src_main_climatrackapp_renderall",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L283",
+      "source_location": "L423",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_main_climatrackapp_startliveslatimer",
-      "target": "src_main_climatrackapp_renderemergencycards"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L361",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_handlecreateemergency",
-      "target": "src_main_climatrackapp_closeemergencymodal"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L362",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_handlecreateemergency",
-      "target": "src_main_climatrackapp_renderall"
+      "target": "src_main_climatrackapp_renderemergencycards",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2643,141 +3575,57 @@
       "source_location": "L559",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_handleresolveemergency",
-      "target": "src_main_climatrackapp_renderall"
+      "source": "src_main_climatrackapp_handlecreateemergency",
+      "target": "src_main_climatrackapp_renderall",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L369",
+      "source_location": "L611",
       "weight": 1.0,
       "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreateorder",
+      "target": "src_main_climatrackapp_renderall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_renderall",
-      "target": "src_main_climatrackapp_renderassetcards"
+      "source_file": "src/main.js",
+      "source_location": "L589",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreateorder",
+      "target": "src_services_serviceorderservice_serviceorderservice_createorder"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
-      "source_location": "L370",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_renderall",
-      "target": "src_main_climatrackapp_rendercontractcards"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L367",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_renderall",
-      "target": "src_main_climatrackapp_renderdashboardtable"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L368",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_renderall",
-      "target": "src_main_climatrackapp_renderemergencycards"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L366",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_renderall",
-      "target": "src_main_climatrackapp_rendermetrics"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main.js",
-      "source_location": "L407",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_main_climatrackapp_renderdashboardtable",
-      "target": "src_utils_formatters_formatters"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main.js",
-      "source_location": "L402",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_main_climatrackapp_renderdashboardtable",
-      "target": "src_utils_sanitizer_sanitizer"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L515",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_renderemergencycards",
-      "target": "src_main_climatrackapp_handleresolveemergency"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.js",
-      "source_location": "L522",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_main_climatrackapp_renderemergencycards",
-      "target": "src_main_climatrackapp_handlewhatsappdispatch"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main.js",
-      "source_location": "L477",
+      "source_location": "L974",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_main_climatrackapp_renderemergencycards",
-      "target": "src_utils_formatters_formatters"
+      "target": "src_main_climatrackapp_openresolvemodal",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L431",
+      "source_location": "L694",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_renderemergencycards",
-      "target": "src_utils_sanitizer_sanitizer"
+      "source": "src_main_climatrackapp_handleresolveemergencysubmit",
+      "target": "src_main_climatrackapp_renderall",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2785,10 +3633,10 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L535",
+      "source_location": "L663",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_handleresolveemergency",
+      "source": "src_main_climatrackapp_handleresolveemergencysubmit",
       "target": "src_services_serviceorderservice_serviceorderservice_createorder"
     },
     {
@@ -2797,265 +3645,606 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L552",
+      "source_location": "L683",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_handleresolveemergency",
+      "source": "src_main_climatrackapp_handleresolveemergencysubmit",
       "target": "src_services_serviceorderservice_serviceorderservice_sealorder"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L567",
+      "source_location": "L981",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_handlewhatsappdispatch",
+      "source": "src_main_climatrackapp_renderemergencycards",
+      "target": "src_main_climatrackapp_openwhatsappmodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L727",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlewhatsappsubmit",
       "target": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice_notifyemergencydispatch"
     },
     {
-      "relation": "references",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L780",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlecreatecontract",
+      "target": "src_main_climatrackapp_renderall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L586",
+      "source_location": "L765",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_renderassetcards",
-      "target": "src_utils_formatters_formatters"
+      "source": "src_main_climatrackapp_handlecreatecontract",
+      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice_createcontract"
     },
     {
-      "relation": "references",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L796",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_handlepurgedemo",
+      "target": "src_main_climatrackapp_renderall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.js",
-      "source_location": "L590",
+      "source_location": "L790",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_main_climatrackapp_renderassetcards",
-      "target": "src_utils_sanitizer_sanitizer"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main.js",
-      "source_location": "L660",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_main_climatrackapp_rendercontractcards",
-      "target": "src_utils_formatters_formatters"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main.js",
-      "source_location": "L639",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_main_climatrackapp_rendercontractcards",
-      "target": "src_utils_sanitizer_sanitizer"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service",
-      "target": "src_services_climatrackcache_service_climatrackcacheservice"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service",
-      "target": "src_services_climatrackcache_service_getstorageitem"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service",
-      "target": "src_services_climatrackcache_service_memorystore"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L28",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service",
-      "target": "src_services_climatrackcache_service_removestorageitem"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service",
-      "target": "src_services_climatrackcache_service_setstorageitem"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/run_tests.js",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "tests_run_tests",
-      "target": "src_services_climatrackcache_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L65",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service_climatrackcacheservice_getorders",
-      "target": "src_services_climatrackcache_service_getstorageitem"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L38",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service_climatrackcacheservice_ispurged",
-      "target": "src_services_climatrackcache_service_getstorageitem"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L42",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service_climatrackcacheservice_purgedata",
-      "target": "src_services_climatrackcache_service_setstorageitem"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L61",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service_climatrackcacheservice_saveorders",
-      "target": "src_services_climatrackcache_service_setstorageitem"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L43",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service_climatrackcacheservice_purgedata",
-      "target": "src_services_climatrackcache_service_removestorageitem"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L49",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service_climatrackcacheservice_resetpurgefortesting",
-      "target": "src_services_climatrackcache_service_removestorageitem"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L64",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service_climatrackcacheservice",
-      "target": "src_services_climatrackcache_service_climatrackcacheservice_getorders"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L52",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service_climatrackcacheservice",
-      "target": "src_services_climatrackcache_service_climatrackcacheservice_ispurged"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L56",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service_climatrackcacheservice",
+      "source": "src_main_climatrackapp_handlepurgedemo",
       "target": "src_services_climatrackcache_service_climatrackcacheservice_purgedata"
     },
     {
-      "relation": "method",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L805",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderall",
+      "target": "src_main_climatrackapp_renderassetcards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L806",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderall",
+      "target": "src_main_climatrackapp_rendercontractcards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L803",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderall",
+      "target": "src_main_climatrackapp_renderdashboardtable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L804",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderall",
+      "target": "src_main_climatrackapp_renderemergencycards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L802",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderall",
+      "target": "src_main_climatrackapp_rendermetrics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
+      "source_location": "L801",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderall",
+      "target": "src_main_climatrackapp_updatepurgebuttonvisibility",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L862",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderdashboardtable",
+      "target": "src_utils_formatters_formatters"
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L854",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderdashboardtable",
+      "target": "src_utils_sanitizer_sanitizer"
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L938",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderemergencycards",
+      "target": "src_utils_formatters_formatters"
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L887",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderemergencycards",
+      "target": "src_utils_sanitizer_sanitizer"
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L1002",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderassetcards",
+      "target": "src_utils_formatters_formatters"
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L991",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_renderassetcards",
+      "target": "src_utils_sanitizer_sanitizer"
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L1099",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_rendercontractcards",
+      "target": "src_utils_formatters_formatters"
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": "L1070",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_main_climatrackapp_rendercontractcards",
+      "target": "src_utils_sanitizer_sanitizer"
+    },
+    {
+      "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/services/climaTrackCache.service.js",
       "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_services_climatrackcache_service_climatrackcacheservice",
-      "target": "src_services_climatrackcache_service_climatrackcacheservice_resetpurgefortesting"
+      "source": "src_services_climatrackcache_service",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service",
+      "target": "src_services_climatrackcache_service_getstorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service",
+      "target": "src_services_climatrackcache_service_memorystore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service",
+      "target": "src_services_climatrackcache_service_removestorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service",
+      "target": "src_services_climatrackcache_service_safereadarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service",
+      "target": "src_services_climatrackcache_service_setstorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/run_tests.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_run_tests",
+      "target": "src_services_climatrackcache_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_ispurged",
+      "target": "src_services_climatrackcache_service_getstorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_safereadarray",
+      "target": "src_services_climatrackcache_service_getstorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_purgedata",
+      "target": "src_services_climatrackcache_service_setstorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_saveassets",
+      "target": "src_services_climatrackcache_service_setstorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_savecontracts",
+      "target": "src_services_climatrackcache_service_setstorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_saveorders",
+      "target": "src_services_climatrackcache_service_setstorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_savetickets",
+      "target": "src_services_climatrackcache_service_setstorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_purgedata",
+      "target": "src_services_climatrackcache_service_removestorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_resetpurgefortesting",
+      "target": "src_services_climatrackcache_service_removestorageitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_getassets",
+      "target": "src_services_climatrackcache_service_safereadarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_getcontracts",
+      "target": "src_services_climatrackcache_service_safereadarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_getorders",
+      "target": "src_services_climatrackcache_service_safereadarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice_gettickets",
+      "target": "src_services_climatrackcache_service_safereadarray",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/services/climaTrackCache.service.js",
-      "source_location": "L60",
+      "source_location": "L101",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_climatrackcache_service_climatrackcacheservice",
-      "target": "src_services_climatrackcache_service_climatrackcacheservice_saveorders"
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_getassets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_getcontracts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_getorders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_gettickets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_ispurged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_purgedata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_resetpurgefortesting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_saveassets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_savecontracts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_saveorders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/climaTrackCache.service.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_services_climatrackcache_service_climatrackcacheservice",
+      "target": "src_services_climatrackcache_service_climatrackcacheservice_savetickets",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -3065,9 +4254,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_services_climatrackcache_service_climatrackcacheservice"
+      "target": "src_services_climatrackcache_service_climatrackcacheservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3076,9 +4265,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_dualcurrencycontractservice",
-      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice"
+      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3088,9 +4277,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_services_dualcurrencycontractservice"
+      "target": "src_services_dualcurrencycontractservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3099,20 +4288,20 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_dualcurrencycontractservice_dualcurrencycontractservice",
-      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice_createcontract"
+      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice_createcontract",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/services/dualCurrencyContractService.js",
-      "source_location": "L52",
+      "source_location": "L58",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_dualcurrencycontractservice_dualcurrencycontractservice",
-      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice_evaluatedunning"
+      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice_evaluatedunning",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -3122,9 +4311,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice"
+      "target": "src_services_dualcurrencycontractservice_dualcurrencycontractservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3133,9 +4322,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_exportservice",
-      "target": "src_services_exportservice_exportservice"
+      "target": "src_services_exportservice_exportservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3145,9 +4334,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_services_exportservice"
+      "target": "src_services_exportservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3156,9 +4345,9 @@
       "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_exportservice_exportservice",
-      "target": "src_services_exportservice_exportservice_downloadcsv"
+      "target": "src_services_exportservice_exportservice_downloadcsv",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3167,9 +4356,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_exportservice_exportservice",
-      "target": "src_services_exportservice_exportservice_generateorderscsv"
+      "target": "src_services_exportservice_exportservice_generateorderscsv",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -3179,9 +4368,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_services_exportservice_exportservice"
+      "target": "src_services_exportservice_exportservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3190,9 +4379,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_serviceorderservice",
-      "target": "src_services_serviceorderservice_serviceorderservice"
+      "target": "src_services_serviceorderservice_serviceorderservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3202,9 +4391,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_serviceorderservice",
-      "target": "src_utils_cryptoseal"
+      "target": "src_utils_cryptoseal",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -3214,9 +4403,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_serviceorderservice",
-      "target": "src_utils_cryptoseal_cryptoseal"
+      "target": "src_utils_cryptoseal_cryptoseal",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3226,9 +4415,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_services_serviceorderservice"
+      "target": "src_services_serviceorderservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3237,9 +4426,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_serviceorderservice_serviceorderservice",
-      "target": "src_services_serviceorderservice_serviceorderservice_createorder"
+      "target": "src_services_serviceorderservice_serviceorderservice_createorder",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3248,9 +4437,9 @@
       "source_location": "L100",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_serviceorderservice_serviceorderservice",
-      "target": "src_services_serviceorderservice_serviceorderservice_sealorder"
+      "target": "src_services_serviceorderservice_serviceorderservice_sealorder",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3259,9 +4448,9 @@
       "source_location": "L144",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_serviceorderservice_serviceorderservice",
-      "target": "src_services_serviceorderservice_serviceorderservice_verifyseal"
+      "target": "src_services_serviceorderservice_serviceorderservice_verifyseal",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -3271,9 +4460,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_services_serviceorderservice_serviceorderservice"
+      "target": "src_services_serviceorderservice_serviceorderservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3306,9 +4495,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_whatsappclimanotifier_service",
-      "target": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice"
+      "target": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3318,9 +4507,9 @@
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_services_whatsappclimanotifier_service"
+      "target": "src_services_whatsappclimanotifier_service",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3329,9 +4518,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice",
-      "target": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice_notifyemergencydispatch"
+      "target": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice_notifyemergencydispatch",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3340,9 +4529,9 @@
       "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice",
-      "target": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice_notifyordercompletion"
+      "target": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice_notifyordercompletion",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -3352,9 +4541,9 @@
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice"
+      "target": "src_services_whatsappclimanotifier_service_whatsappclimanotifierservice",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3363,9 +4552,9 @@
       "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_utils_cryptoseal",
-      "target": "src_utils_cryptoseal_cryptoseal"
+      "target": "src_utils_cryptoseal_cryptoseal",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3374,9 +4563,9 @@
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_utils_cryptoseal",
-      "target": "src_utils_cryptoseal_deepsort"
+      "target": "src_utils_cryptoseal_deepsort",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3385,9 +4574,9 @@
       "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_utils_cryptoseal",
-      "target": "src_utils_cryptoseal_k_constants"
+      "target": "src_utils_cryptoseal_k_constants",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3396,9 +4585,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_utils_cryptoseal",
-      "target": "src_utils_cryptoseal_toutf8binarystring"
+      "target": "src_utils_cryptoseal_toutf8binarystring",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3408,9 +4597,9 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_utils_cryptoseal"
+      "target": "src_utils_cryptoseal",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3420,9 +4609,9 @@
       "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_utils_cryptoseal_cryptoseal_sha256",
-      "target": "src_utils_cryptoseal_toutf8binarystring"
+      "target": "src_utils_cryptoseal_toutf8binarystring",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3432,9 +4621,9 @@
       "source_location": "L127",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_utils_cryptoseal_cryptoseal_generate",
-      "target": "src_utils_cryptoseal_deepsort"
+      "target": "src_utils_cryptoseal_deepsort",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3443,9 +4632,9 @@
       "source_location": "L126",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_utils_cryptoseal_cryptoseal",
-      "target": "src_utils_cryptoseal_cryptoseal_generate"
+      "target": "src_utils_cryptoseal_cryptoseal_generate",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3454,9 +4643,9 @@
       "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_utils_cryptoseal_cryptoseal",
-      "target": "src_utils_cryptoseal_cryptoseal_sha256"
+      "target": "src_utils_cryptoseal_cryptoseal_sha256",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3465,9 +4654,9 @@
       "source_location": "L132",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_utils_cryptoseal_cryptoseal",
-      "target": "src_utils_cryptoseal_cryptoseal_verify"
+      "target": "src_utils_cryptoseal_cryptoseal_verify",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -3477,9 +4666,9 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_utils_cryptoseal_cryptoseal"
+      "target": "src_utils_cryptoseal_cryptoseal",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3512,9 +4701,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_utils_formatters",
-      "target": "src_utils_formatters_formatters"
+      "target": "src_utils_formatters_formatters",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3524,9 +4713,9 @@
       "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_utils_formatters"
+      "target": "src_utils_formatters",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -3536,9 +4725,9 @@
       "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_utils_formatters_formatters"
+      "target": "src_utils_formatters_formatters",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3547,9 +4736,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_utils_sanitizer",
-      "target": "src_utils_sanitizer_sanitizer"
+      "target": "src_utils_sanitizer_sanitizer",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3559,9 +4748,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_utils_sanitizer"
+      "target": "src_utils_sanitizer",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -3571,9 +4760,20 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "src_utils_sanitizer_sanitizer"
+      "target": "src_utils_sanitizer_sanitizer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sw.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "sw",
+      "target": "sw_static_assets",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3582,9 +4782,9 @@
       "source_location": "L254",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "tests_run_tests_contractsample"
+      "target": "tests_run_tests_contractsample",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3593,9 +4793,9 @@
       "source_location": "L429",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "tests_run_tests_emergencyticket"
+      "target": "tests_run_tests_emergencyticket",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3604,9 +4804,9 @@
       "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "tests_run_tests_it"
+      "target": "tests_run_tests_it",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3615,9 +4815,9 @@
       "source_location": "L189",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "tests_run_tests_sampleorder"
+      "target": "tests_run_tests_sampleorder",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3626,9 +4826,9 @@
       "source_location": "L226",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_run_tests",
-      "target": "tests_run_tests_sealedorder"
+      "target": "tests_run_tests_sealedorder",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": []
